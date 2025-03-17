@@ -144,5 +144,14 @@ body{
 
 }
 
+.navbar, .collapse {
+    display: none;
+}
 
+/* Show the navbar and toggle button only for screens between 319px and 480px */
+@media (min-width: 319px) and (max-width: 480px) {
+    .navbar, .collapse {
+        display: block;
+    }
+}
 
