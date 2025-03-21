@@ -1,0 +1,302 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    line-height: 1.6;
+    height: 100vh;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+/* Upper Box */
+#upperbox {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #2c3e50;
+    padding: 10px 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+#insidebox {
+    display: flex;
+    gap: 15px;
+}
+
+#btn, #btn1, #btn2 {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#btn:hover, #btn1:hover, #btn2:hover {
+    background-color: #2980b9;
+}
+
+#search {
+    background-color: #ecf0f1;
+    border-radius: 20px;
+    padding: 5px 15px;
+    display: flex;
+    align-items: center;
+}
+
+#wrtsearch {
+    color: #333;
+    margin: 0;
+}
+
+#login {
+    background-color: #ecf0f1;
+    border-radius: 20px;
+    padding: 5px 15px;
+    display: flex;
+    align-items: center;
+}
+
+#wrtlogin {
+    color: #333;
+    margin: 0;
+}
+
+#logo {
+    height: 60px;
+}
+
+#bg {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(107, 107, 107, 0.384);
+    padding: 10px;
+}
+
+/* Left Side Box */
+#leftsidebox {
+    background-color: #34495e;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px;
+    width: 20%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+#languagetxt {
+    margin-bottom: 20px;
+}
+
+#text a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+#text a:hover {
+    background-color: #2c3e50;
+}
+
+/* Main Content Box */
+#ASCIICODEBOX {
+    position: relative;
+    left: 320px;
+    top: -363px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px;
+    width: 80%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+#LINE {
+    border: 1px solid #bdc3c7;
+    margin: 20px 0;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #34495e;
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+tr:hover {
+    background-color: #f1f1f1;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #2c3e50;
+    color: white;
+    margin-top: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+/* Navigation Bar */
+#navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #2c3e50;
+    padding: 10px 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+#nav-left, #nav-right {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+#navbar a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+#navbar a:hover {
+    color: #3498db;
+}
+
+#search input {
+    padding: 5px 10px;
+    border-radius: 20px;
+    border: 1px solid #ccc;
+    outline: none;
+}
+
+#search input:focus {
+    border-color: #3498db;
+}
+#upperbox {
+    position: relative;
+    top: 0;
+    height: 80px;
+    width: 100%;
+    background-color: #2c3e50;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+#insidebox {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+#btn, #btn1, #btn2 {
+    border: none;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    height: 40px;
+    width: 120px;
+    background-color: #3498db;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#btn:hover, #btn1:hover, #btn2:hover {
+    background-color: #2980b9;
+}
+
+#search {
+    background-color: #ecf0f1;
+    border-radius: 20px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    width: 200px;
+    padding: 0 15px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#search:hover {
+    background-color: #bdc3c7;
+}
+
+#wrtsearch {
+    margin: 0;
+    font-size: 16px;
+    color: #333;
+}
+
+#login {
+    background-color: #ecf0f1;
+    border-radius: 20px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    width: 100px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#login:hover {
+    background-color: #bdc3c7;
+}
+
+#wrtlogin {
+    margin: 0;
+    font-size: 16px;
+    color: #333;
+}
+
+#bg {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 60px;
+    width: 230px;
+    background-color: rgba(107, 107, 107, 0.384);
+}
+
+#logo {
+    height: 60px;
+}
+
+
+/* Rest of the CSS remains the same */
+
+/* Responsive Design */

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forum</title>
+    <link rel="stylesheet" href="Forum.css"/>
+</head>
+<body>
+   <!-- Navigation Bar -->
+  
+
+   <!-- Rest of the Content -->
+   <div id="upperbox">
+    <div id="insidebox">
+      <a href="./tutbooleancodes.html">
+        <button id="btn2"><h3 id="homebutton1" class="searchoptions">Tutorials</h3></button>
+      </a>
+      <a href="../Refrence/Refrence.html">
+        <button id="btn"><h3 id="homebutton" class="searchoptions">Reference</h3></button>
+      </a>
+      <a href="../Forum/forum.html">
+        <button id="btn"><h3 id="homebutton" class="searchoptions">Forum</h3></button>
+      </a>
+      <a href="../article/Article.html">
+        <button id="btn"><h3 id="homebutton" class="searchoptions">Article</h3></button>
+      </a>
+    </div>  
+    
+    <!-- Search Section -->
+    <div id="search">
+      <h3 id="wrtsearch">Search</h3>
+    </div>
+
+    <!-- Login Button -->
+    <div id="login">
+      <a href="../login/LOGIN.HTML" id="loginLink" onclick="setLoginFlag()">
+        <h3 id="wrtlogin">Login</h3>
+      </a>
+    </div>
+
+    <!-- Home Button -->
+    <a href="../video.html">
+      <button id="btn1"><h3 id="homebutton" class="searchoptions">Home</h3></button>
+    </a>
+
+    <!-- Logo Section -->
+    <div id="bg">
+      <img src="../assests/Screenshot 2025-03-17 180941.png" alt="logo" id="logo">
+    </div>
+   </div>
+  
+
+   <div id="leftsidebox">
+     <div id="languagetxt">
+       <div id="insideleftbox">
+         <h3>Forum</h3>
+       </div>
+       <h4 id="c">Beginners</h4>
+       <div id="text">
+         <a href="./clibrary.html" id="loginLink"><div id="Numericalbases"><h4>Windows Programming</h4></div></a>
+         <a href="./container.html" id="loginLink"><div id="Numericalbases"><h4>UNIX/Linux Programming</h4></div></a>
+         <a href="./inputoutput.html" id="loginLink"><div id="Numericalbases"><h4>General C++ Programming</h4></div></a>
+         <a href="./Multi-threading.html" id="loginLink"><div id="Numericalbases"><h4>Lounge</h4></div></a>
+         <a href="http://127.0.0.1:3000/videoplayer/tutorials/tutbooleancodes.html" id="loginLink"><div id="Numericalbases"><h4>Jobs</h4></div></a>
+       </div>
+     </div>
+   </div>
+
+   <div id="ASCIICODEBOX">
+     <h3>Reference</h3>
+     <h2>Forum</h2>
+     <hr id="LINE">
+     <table>
+       <thead>
+         <tr>
+           <th>Forum</th>
+           <th>Last active topic</th>
+         </tr>
+       </thead>
+       <tbody>
+         <tr>
+           <td>Beginners<footer>Discussions about C++ programming for beginners</footer></td>
+           <td>"Getter for enum member returns a copy of enum?" on Mar 19, 2025 at 8:02am by TheIdeasMan</td>
+         </tr>
+         <tr>
+           <td>Windows Programming<footer>Win32, MFC, ATL, C++/CLI, .NET ...</footer></td>
+           <td>"Formatted Console Log with Datetime" on Mar 12, 2025 at 9:29pm by seeplus</td>
+         </tr>
+         <tr>
+           <td>UNIX/Linux Programming<footer>Programming C++ for UNIX and Linux</footer></td>
+           <td>"tzdb: cannot locate zone" on Mar 3, 2025 at 2:07am by spistol</td>
+         </tr>
+         <tr>
+           <td>General C++ Programming<footer>Anything about programming in C++</footer></td>
+           <td>"Use C++ 20 with Embarcadero" on Mar 18, 2025 at 9:06am by salem c</td>
+         </tr>
+         <tr>
+           <td>Lounge<footer>Discussions about this website, or other topics not related to C++ programming</footer></td>
+           <td>"I wrote a cron job!" on Mar 15, 2025 at 11:32pm by jonnin</td>
+         </tr>
+         <tr>
+           <td>Jobs<footer>Job offers for C++ programmers.</footer></td>
+           <td>"Jobs" on Apr 18, 2024 at 8:09pm by deleted account xyzzy</td>
+         </tr>
+         <tr>
+           <td>Articles<footer>How-to's and other technical articles</footer></td>
+           <td>"How to Make a Game 2" on Jul 29, 2011 at 12:21pm by anonymous23323124</td>
+         </tr>
+       </tbody>
+     </table>
+   </div>
+
+   <div id="footer">
+     <h5>Home page | Privacy policy</h5>
+     <footer>© cplusplus.com, 2000-2023 - All rights reserved - v3.3.4s</footer>
+     <footer>Spotted an error? contact us</footer>
+   </div>
+
+   <script>
+    function setLoginFlag() {
+      localStorage.setItem('loginPageVisited', 'true');
+    }
+
+    window.onload = function() {
+      if (localStorage.getItem('loginPageVisited') === 'true') {
+        document.getElementById('loginLink').remove();
+        localStorage.removeItem('loginPageVisited');
+      }
+    };
+   </script>
+
+   <script src="video.js"></script>
+   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
