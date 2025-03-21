@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="video.css"/>
+</head>
+<body>
+   <div id="upperbox">
+    <div id="insidebox"><a href="./tutorials/tutASCII.html">
+      <button id="btn"><h3 id="homebutton" class="searchoptions">Tutorials</h3></button></a>
+      <a href="./Refrence/Refrence.html">
+      <button id="btn"><h3 id="homebutton" class="searchoptions">Reference</h3></button></a>
+      <a href="./Forum/forum.html">
+      <button id="btn"><h3 id="homebutton" class="searchoptions">Forum</h3></button></a>
+      <a href="./article/Article.html">
+      <button id="btn"><h3 id="homebutton" class="searchoptions">Article</h3></button></a>
+    </div>  
+    
+    <div id="search">
+      <h3 id="wrtsearch">Search</h3>
+    </div>
+    <!-- Login Button with Anchor Tag -->
+    <div id="login">
+      <a href="./login/LOGIN.HTML" id="loginLink" onclick="setLoginFlag()" >
+        <h3 id="wrtlogin">Login</h3>
+      </a>
+    </div>
+    <button id="btn1"><h3 id="homebutton" class="searchoptions">Home</h3></button>
+    <div id="bg">
+      <img src="./assests/Screenshot 2025-03-17 180941.png" alt="logo" id="logo">
+    </div>
+
+    <div id="Tutorials">
+      <h2 class="tut">Tutorials</h2>
+      <p class="hello">C++ Language: Learn this versatile and powerful programming language. Includes detailed explanations of pointers, functions, classes and templates, among others...</p>
+    </div>
+
+    <div id="Tutorials">
+      <h2 class="tut">Reference</h2>
+      <p class="hello">Description of the most important classes, functions and objects of the Standard Language Library, with descriptive fully-functional short programs as examples. Browse the C++ Reference</p>
+    </div>
+
+    <div id="Tutorials">
+      <h2 class="tut">Article</h2>
+      <p class="hello">User-contributed articles, organized into different categories. You can contribute your own articles! Browse Articles</p>
+    </div>
+   </div>
+
+   <div id="Activity">
+     <div id="forum">
+       <h2>Latest Activity of Forum</h2>
+       <a href=""><p id="innerforum">Getter for enum member returns a copy of enum?</a> [Beginners]</p>
+       <p id="bye">I came across something non-intuitive, found a solution, but don't fully understand why the solution works. #include < iostream > using<footer style="position: relative; top: -80PX;left: 20px;">namespace std; enum ..</footer></p>
+
+       <a href=""><p id="innerforum1">Use C++ 20 with Embarcadero</a>[General C++ Programming]</p>
+       <p id="bye1">I have been using C++ builder for some C projects. It works really well. However, I have been trying to run some code from a tutorial<footer style="position: relative; top: -160PX;left: 20px;"> I want to follow and I get..</footer></p>
+
+       <a href=""><p id="innerforum2">Call of Templated Function w/ Explicit Template Argument Fails to Compile </a>[General C++ Programming]</p>
+       <p id="bye2">greetings kind regards may i please enquire why compiler reports error for code below as indicated . thank you kindly template<typename T, typename U> voi..<footer style="position: relative; top: -160PX;left: 20px;"> </footer></p>
+
+       <a href=""><p id="innerforum3">I wrote a cron job! </a>[Lounge]</p>
+       <p id="bye3">This is a continuation of Finally switched to Linux Mint[/b] (https://cplusplus.com/forum/lounge/285724/[b][/b]). Mint, by default,<footer style="position: relative; top: -285PX;left: 20px;"> is constantly popping up n.. </footer></p>
+
+       <a href=""><p id="innerforum4">by DuthomhasRandom Story Time</a>[Lounge]</p>
+       <p id="bye4"> I once went to McDonalds, waaay back when $5 was expensive, and bought food that totaled something like $6.85. I gave the cashier<footer style="position: relative; top: -365px;left: 20px;">a five, two ones, and a dim..</footer></p>
+
+       <a href=""><p id="innerforum5">Formatted Console Log with Datetime </a>[Windows Programming]</p>
+       <p id="bye5"> I'm working on a C++11 project that uses console logging (cout) at the moment. I created the following Log method to perform printf-style <footer style="position: relative; top: -365px;left: 20px;"></footer></p>
+     </div>
+   </div>
+
+   <script>
+     // Set a flag in localStorage when the Login button is clicked
+     function setLoginFlag() {
+       localStorage.setItem('loginPageVisited', 'true');
+     }
+
+     // Check if the login page has been visited
+     window.onload = function() {
+       if (localStorage.getItem('loginPageVisited') === 'true') {
+         // Remove the Login button
+         document.getElementById('login').remove();
+         // Clear the flag (optional, if you want to reset the state)
+         localStorage.removeItem('loginPageVisited');
+       }
+     };
+   </script>
+
+   <script src="video.js"></script>
+   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

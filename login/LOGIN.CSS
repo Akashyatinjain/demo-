@@ -1,0 +1,116 @@
+#outerbox{
+    height: 640px;
+    width: 500px;
+    background-color: #497D74; 
+    border-radius: 30px;
+}
+body{
+    font-family: SpotifyMixUI, CircularSp-Arab, CircularSp-Hebr,
+CircularSp-Cyrl, CircularSp-Grek, CircularSp-Deva,
+var(--fallback-fonts, sans-serif);
+     display: flex;
+     padding-left: 32px;
+     padding-bottom: 32px;
+     padding-top: 32px;
+     padding-right: 32px;
+     flex-shrink: 1;
+     flex-grow: 3;
+     background-color:#27445D;
+     justify-content: center;
+ }
+#innerbox{
+    position: relative;
+    top: 100p;
+    right: 80px;
+}
+#a{
+    position: relative;
+    height: 19.2px;    
+    top: 110px;
+    left: 158px;
+    color: #fff;
+}
+#box{
+    bottom: -25px;
+    gap: 10px;
+    width: 400px;
+    height: 28px;
+    position: relative;
+    top: 100px;
+    left: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0px 0px 8px;
+    padding:12px;
+    border: 1px solid;
+    border-color:  rgba(255, 255, 255, 0.349);
+    border-radius: 5px;
+}
+.hello{
+    position: relative;
+    top: 10px;
+    gap: 15px;
+    height: 27.2px;
+    width: 400px;
+    color: rgb(165, 163, 165);
+}
+#loginbut{
+    position: relative;
+    top: 114px;
+    left: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 48px;
+    width: 425px;
+    background-color: rgba(255, 255, 255, 0.732);
+    border-radius: 30px;
+}
+#h{
+    font-size: 16px;
+}
+#w{
+    height: 22.4px;
+    width: 166.54px;
+    margin: 16px 0px;
+    position: relative;
+    top: 135px;
+    left: 275px;
+    color: #FFFFFF;
+    display: inline;
+}
+
+#q{
+    color: rgb(9, 1, 1);
+}
+#e{
+    color: #FFFFFF;
+}
+.y{
+    position: relative;
+    top: 200px;
+    right: 50px;
+    display: inline;
+}
+#u{
+    margin-left: 100px;
+}
+#pass{
+    position: relative;
+    height: 19.2px;    
+    top: 105px;
+    left: 158px;
+    color: #fff;
+}
+#hii{
+    position: relative;
+    left:-30px;
+    display: block;
+}
+#text{
+    text-decoration: none;
+}
+#hello{
+    text-decoration: none;
+}
