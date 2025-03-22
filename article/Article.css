@@ -1,0 +1,237 @@
+/* General Styles */
+body {
+    height: 100vh;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header */
+#upperbox {
+    position: relative;
+    top: 0;
+    height: 80px;
+    width: 100%;
+    background-color: #2c3e50;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+#insidebox {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+#btn, #btn1, #btn2 {
+    border: none;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    height: 40px;
+    width: 120px;
+    background-color: #3498db;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#btn:hover, #btn1:hover, #btn2:hover {
+    background-color: #2980b9;
+}
+
+#search {
+    background-color: #ecf0f1;
+    border-radius: 20px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    width: 200px;
+    padding: 0 15px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#search:hover {
+    background-color: #bdc3c7;
+}
+
+#wrtsearch {
+    margin: 0;
+    font-size: 16px;
+    color: #333;
+}
+
+#login {
+    background-color: #ecf0f1;
+    border-radius: 20px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    width: 100px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#login:hover {
+    background-color: #bdc3c7;
+}
+
+#wrtlogin {
+    margin: 0;
+    font-size: 16px;
+    color: #333;
+}
+
+#bg {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 60px;
+    width: 230px;
+    background-color: rgba(107, 107, 107, 0.384);
+}
+
+#logo {
+    height: 60px;
+}
+
+/* Left Side Box */
+#leftsidebox {
+    background-color: #34495e;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px;
+    position: relative;
+    left: -15px;
+    width: 14%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+#insideleftbox{
+    position: relative;
+    top: -50px;
+    font-size: 20px;
+    text-decoration: none;
+    color: white;
+}
+#insideleftbox:hover{
+    background-color: #2c3e50;
+}
+
+#insidebox {
+    display: flex;
+    gap: 15px;
+}
+#languagetxt {
+    margin-bottom: 20px;
+}
+#text a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+.Numericalbases{
+  height: 20px;
+  width: 100%;
+}
+#text a:hover {
+    background-color: #2c3e50;
+}
+
+/* Main Content */
+#ASCIICODEBOX {
+    position: relative;
+    top: -518px;
+    left: 275px;
+    border: 2px dashed #3498db;
+    height: 890px;
+    width: 1200px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+#LINE {
+    background-color: #27445D;
+    height: 2px;
+    width: 1220px;
+}
+
+/* Article Sections */
+#bix {
+    position: relative;
+    top: -15px;
+    height: 25px;
+    background-color: #27445D;
+    width: 550px;
+}
+
+#fix {
+    position: relative;
+    top: -10px;
+}
+
+.rating {
+    font-size: 24px;
+    color: #ffd700; /* Gold color for stars */
+}
+
+.rating span {
+    cursor: pointer;
+}
+
+.rating span.active {
+    color: #ffa500; /* Orange color for active stars */
+}
+
+.votes {
+    font-size: 16px;
+    color: #666;
+    margin-left: 10px;
+}
+
+#rik {
+    position: relative;
+    left: 15px;
+    height: 130px;
+    width: 550px;
+    border: 2px dashed #3498db;
+    margin-bottom: 20px;
+    background-color: #ecf0f1;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+#loginLink{
+    text-decoration: none;
+    color: white;
+}
+/* Footer */
+#footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #2c3e50;
+    color: white;
+    position: relative;
+    right: 310px;
+    top: 105px;
+    margin-top: 20px;
+    width: 1480px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
