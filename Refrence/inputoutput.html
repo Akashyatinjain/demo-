@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input/Output</title>
+    <link rel="stylesheet" href="inputoutput.css"/>
+</head>
+<body>
+   <div id="upperbox">
+    <div id="insidebox">
+      <a href="./Refrence.html"><button id="btn"><h3 id="homebutton1" class="searchoptions">Refrence</h3></button></a>
+      <a href="../tutorials/tutASCII.html"><button id="btn"><h3 id="homebutton" class="searchoptions">Tutorials</h3></button></a>
+      <a href="../Forum/forum.html"><button id="btn"><h3 id="homebutton" class="searchoptions">Forum</h3></button></a>
+      <a href="../article/Article.html"><button id="btn"><h3 id="homebutton" class="searchoptions">Article</h3></button></a>
+    </div>  
+    
+    <div id="search">
+      <h3 id="wrtsearch">Search</h3>
+    </div>
+    
+    <div id="login">
+      <a href="../login/LOGIN.HTML" id="loginLink" onclick="setLoginFlag()"><h3 id="wrtlogin">Login</h3></a>
+    </div>
+    <button id="btn1"><h3 id="homebutton" class="searchoptions">Home</h3></button>
+    <div id="bg">
+      <img src="../assests/Screenshot 2025-03-17 180941.png" alt="logo" id="logo">
+    </div>
+   </div>
+
+   <div id="leftsidebox">
+     <div id="languagetxt">
+       <h3 id="c">C++</h3>
+       <div id="insideleftbox">
+         <h3>Reference</h3>
+       </div>
+       <div id="text">
+         <a href="./clibrary.html" id="loginLink"><div class="Numericalbases"><h4>C Library:</h4></div></a>
+         <a href="./container.html" id="loginLink"><div class="Numericalbases"><h4>Containers:</h4></div></a>
+         <a href="./inputoutput.html" id="loginLink"><div class="Numericalbases"><h4>Input / Output:</h4></div></a>
+         <a href="./Multi-threading.html" id="loginLink"><div class="Numericalbases"><h4>Multi-threading:</h4></div></a>
+         <a href="./Refrence.html" id="loginLink"><div class="Numericalbases"><h4>Other:</h4></div></a>
+       </div>
+     </div>
+   </div>
+
+   <div id="ASCIICODEBOX">
+    
+     <h2>Reference</h2>
+     <hr id="LINE">
+     <h3>Input/Output Stream Library</h3>
+     <hr id="LINE">
+     <p>Provides functionality to use an abstraction called streams specially designed to perform input and output operations on sequences of character, like files or strings.</p>
+     <p>This functionality is provided through several related classes, as shown in the following relationship map, with the corresponding header file names on top:</p>
+     <img src="../assests/Screenshot 2025-03-20 102254.png" alt="Stream Relationship Map">
+   </div>
+
+   <div id="footer">
+     <h5><a href="../video.html" id="loginLink">home page</a>  |<a href="../privcypolicy/" id="loginLink">Privacy policy</a></h5>
+     <footer>© cplusplus.com, 2000-2023 - All rights reserved - v3.3.4s</footer>
+     <footer>Spotted an error? contact us</footer>
+   </div>
+
+   <script>
+    function setLoginFlag() {
+      localStorage.setItem('loginPageVisited', 'true');
+    }
+
+    window.onload = function() {
+      if (localStorage.getItem('loginPageVisited') === 'true') {
+        document.getElementById('loginLink').remove();
+        localStorage.removeItem('loginPageVisited');
+      }
+    };
+   </script>
+
+   <script src="video.js"></script>
+   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
