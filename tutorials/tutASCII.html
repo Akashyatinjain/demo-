@@ -1,0 +1,652 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="tut.css"/>
+   
+</head>
+<body>
+
+   <!-- Header -->
+   <div id="upperbox">
+    <button id="menuToggle">☰ Menu</button>
+
+    <div id="insidebox">
+      <a href="./Article.html">
+        <button id="btn2"><h3 id="homebutton1" class="searchoptions">Article</h3></button>
+      </a>
+      <a href="../tutorials/tutASCII.html">
+        <button id="btn"><h3 id="homebutton" class="searchoptions">Tutorials</h3></button>
+      </a>
+      <a href="../Refrence/Refrence.html">
+        <button id="btn"><h3 id="homebutton" class="searchoptions">Reference</h3></button>
+      </a>
+      <a href="../Forum/forum.html">
+        <button id="btn"><h3 id="homebutton" class="searchoptions">Forum</h3></button>
+      </a>
+    </div>  
+    
+    <!-- Search Section -->
+    <div id="search">
+      <h3 id="wrtsearch">Search</h3>
+    </div>
+
+    <!-- Login Button -->
+    <div id="login">
+      <a href="../login/LOGIN.HTML" id="loginLink" onclick="setLoginFlag()">
+        <h3 id="wrtlogin">Login</h3>
+      </a>
+    </div>
+
+    <!-- Home Button -->
+    <a href="../video.html">
+      <button id="btn1"><h3 id="homebutton" class="searchoptions">Home</h3></button>
+    </a>
+
+    <!-- Logo Section -->
+    <div id="bg">
+      <img src="../assests/Screenshot 2025-03-17 180941.png" alt="logo" id="logo">
+    </div>
+   </div>
+   <button id="leftMenuToggle">☰ Show Menu</button>
+
+   <!-- Left Side Box -->
+   <div id="leftsidebox">
+    <div id="languagetxt">
+        <h3 id="c" style="position: relative;left: px;top: 80px;">C++</h3>
+        <a href="./Article.html" style="text-decoration: none;">
+        <div id="insideleftbox"> 
+            <h3 >Article</h3>
+        </div></a>
+        <div id="text">
+            <a href="./Article.html" id="loginLink">
+                <div class="Numericalbases"><h4>Algorithms</h4></div>
+            </a>
+            <a href="./Article.html" id="loginLink">
+                <div class="Numericalbases"><h4>Graphics and Multimedia</h4></div>
+            </a>
+            <a href="./Article.html" id="loginLink">
+                <div class="Numericalbases"><h4>Language Features</h4></div>
+            </a>
+            <a href="./Article.html" id="loginLink">
+                <div class="Numericalbases"><h4>Unix/Linux Programming</h4></div>
+            </a>
+            <a href="./Article.html" id="loginLink">
+                <div class="Numericalbases"><h4>Tips and Tricks</h4></div>
+            </a>
+        </div>
+    </div>
+</div>
+
+   <!-- ASCII Code Box -->
+   <div id="ASCIICODEBOX">
+     <h3 style="position: relative;top: -10px;left: 15px; font-size: 18px;">Tutorials : ASCII Codes</h3>
+     <h2 style="position: relative;top: 20px;left: 15px;">ASCII CODES</h2>
+     <hr id="LINE">
+     <p style="position: relative;left: 15px;font-size: 18px;">It is a very well-known fact that computers can manage internally only 0s (zeros) and 1s (ones). This is true, and by means of sequences of 0s and 1, computers express any numerical value as its binary translation, which is a very simple mathematical operation (as explained in the paper numerical bases).</p>
+     <p style="position: relative;left: 15px;font-size: 18px;">Nevertheless, there is no such evident way to represent letters and other non-numeric characters with 0s and 1s. Therefore, in order to do that, computers use ASCII tables, which are tables or lists that contain all the letters in the roman alphabet plus some additional characters. In these tables, each character is always represented by the same order number. For example, the ASCII code for the capital letter "A" is always represented by the order number 65, which is easily representable using 0s and 1s in binary: 65 expressed as a binary number is 1000001.</p>
+     <p style="position: relative;top: 380px;left: 15px;font-size: 18px;">Because most systems nowadays work with 8-bit bytes, which can represent 256 different values, in addition to the 128 standard ASCII codes, there are other 128 that are known as extended ASCII, which are platform- and locale-dependent. So there is more than one extended ASCII character set.</p>
+     <p style="position: relative;top: 380px;left: 15px;font-size: 18px;">The first of them, the OEM character set, is the one used by the hardware of the immense majority of PC compatible machines, and was also used under the old DOS system. It includes some foreign signs, some marked characters, and pieces to represent panels.</p>
+     <p style="position: relative;top: 760px;left: 15px;font-size: 18px;">The ANSI character set is a standard that many systems incorporate, like Windows, some UNIX platforms, and many standalone applications. It includes more symbols and marked letters so that it can be used with no need of being redefined in many more languages.</p>
+    </div>
+
+   <!-- Tables -->
+   <div class="table">
+     <table>
+       <tr>
+         <th>*0</th>
+         <th>1</th>
+         <th>2</th>
+         <th>3</th>
+         <th>4</th>
+         <th>5</th>
+         <th>6</th>
+         <th>7</th>
+         <th>8</th>
+         <th>9</th>
+         <th>A</th>
+         <th>B</th>
+         <th>C</th>
+         <th>D</th>
+         <th>E</th>
+         <th>F</th>
+       </tr>
+       <tr>
+         <td>NUL</td>
+         <td>SOH</td>
+         <td>STX</td>
+         <td>ETX</td>
+         <td>EOT</td>
+         <td>ENQ</td>
+         <td>ACK</td>
+         <td>BEL</td>
+         <td>BS</td>
+         <td>TAB</td>
+         <td>LF</td>
+         <td>VT</td>
+         <td>FF</td>
+         <td>CR</td>
+         <td>SO</td>
+         <td>SI</td>
+       </tr>
+       <tr>
+         <td>DLE</td>
+         <td>DC1</td>
+         <td>DC2</td>
+         <td>DC3</td>
+         <td>DC4</td>
+         <td>NAK</td>
+         <td>SYN</td>
+         <td>ETB</td>
+         <td>CAN</td>
+         <td>EM</td>
+         <td>SUB</td>
+         <td>ESC</td>
+         <td>FS</td>
+         <td>GS</td>
+         <td>RS</td>
+         <td>US</td>
+       </tr>
+       <tr>
+         <td> </td>
+         <td>!</td>
+         <td>"</td>
+         <td>#</td>
+         <td>$</td>
+         <td>%</td>
+         <td>&</td>
+         <td>'</td>
+         <td>(</td>
+         <td>)</td>
+         <td>*</td>
+         <td>+</td>
+         <td>,</td>
+         <td>-</td>
+         <td>.</td>
+         <td>/</td>
+       </tr>
+       <tr>
+         <td>0</td>
+         <td>1</td>
+         <td>2</td>
+         <td>3</td>
+         <td>4</td>
+         <td>5</td>
+         <td>6</td>
+         <td>7</td>
+         <td>8</td>
+         <td>9</td>
+         <td>:</td>
+         <td>;</td>
+         <td><</td>
+         <td>=</td>
+         <td>></td>
+         <td>?</td>
+       </tr>
+       <tr>
+         <td>@</td>
+         <td>A</td>
+         <td>B</td>
+         <td>C</td>
+         <td>D</td>
+         <td>E</td>
+         <td>F</td>
+         <td>G</td>
+         <td>H</td>
+         <td>I</td>
+         <td>J</td>
+         <td>K</td>
+         <td>L</td>
+         <td>M</td>
+         <td>N</td>
+         <td>O</td>
+       </tr>
+       <tr>
+         <td>P</td>
+         <td>Q</td>
+         <td>R</td>
+         <td>S</td>
+         <td>T</td>
+         <td>U</td>
+         <td>V</td>
+         <td>W</td>
+         <td>X</td>
+         <td>Y</td>
+         <td>Z</td>
+         <td>[</td>
+         <td>\</td>
+         <td>]</td>
+         <td>^</td>
+         <td>_</td>
+       </tr>
+       <tr>
+         <td>`</td>
+         <td>a</td>
+         <td>b</td>
+         <td>c</td>
+         <td>d</td>
+         <td>e</td>
+         <td>f</td>
+         <td>g</td>
+         <td>h</td>
+         <td>i</td>
+         <td>j</td>
+         <td>k</td>
+         <td>l</td>
+         <td>m</td>
+         <td>n</td>
+         <td>o</td>
+       </tr>
+       <tr>
+         <td>p</td>
+         <td>q</td>
+         <td>r</td>
+         <td>s</td>
+         <td>t</td>
+         <td>u</td>
+         <td>v</td>
+         <td>w</td>
+         <td>x</td>
+         <td>y</td>
+         <td>z</td>
+         <td>{</td>
+         <td>|</td>
+         <td>}</td>
+         <td>~</td>
+         <td>DEL</td>
+       </tr>
+     </table>
+   </div>
+     <div style="position: relative;top: 150px;left: 1px;
+     height: px;">
+      <table class="Table">
+        <tr>
+          <th>0</th>
+          <th>1</th>
+          <th>2</th>
+          <th>3</th>
+          <th>4</th>
+          <th>5</th>
+          <th>6</th>
+          <th>7</th>
+          <th>8</th>
+          <th>9</th>
+          <th>A</th>
+          <th>B</th>
+          <th>C</th>
+          <th>D</th>
+          <th>E</th>
+          <th>F</th>
+        </tr>
+        <tr>
+          <td>8</td>
+          <td>♂</td>
+          <td>u</td>
+          <td>é</td>
+          <td>a</td>
+          <td>à</td>
+          <td>à</td>
+          <td>a</td>
+          <td>c</td>
+          <td>ê</td>
+          <td>è</td>
+          <td>ñ</td>
+          <td>ò</td>
+          <td>i</td>
+          <td>ô</td>
+          <td>õ</td>
+          <td>ò</td>
+        </tr>
+        <tr>
+          <td>9</td>
+          <td>é</td>
+          <td>re</td>
+          <td>f</td>
+          <td>ô</td>
+          <td>ô</td>
+          <td>ò</td>
+          <td>ò</td>
+          <td>ü</td>
+          <td>ü</td>
+          <td>ee</td>
+          <td>É</td>
+          <td>¥</td>
+          <td>R</td>
+          <td>f</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>A</td>
+          <td>á</td>
+          <td>í</td>
+          <td>ó</td>
+          <td>ú</td>
+          <td>r</td>
+          <td>N</td>
+          <td>e</td>
+          <td>e</td>
+          <td>z</td>
+          <td>r</td>
+          <td>-</td>
+          <td>¥</td>
+          <td>¥</td>
+          <td>i</td>
+          <td>«</td>
+          <td>»</td>
+        </tr>
+        <tr>
+          <td>B</td>
+          <td>※</td>
+          <td>※</td>
+          <td>※</td>
+          <td>l</td>
+          <td>i</td>
+          <td>il</td>
+          <td>n</td>
+          <td>i</td>
+          <td>il</td>
+          <td>il</td>
+          <td>n</td>
+          <td>il</td>
+          <td>il</td>
+          <td>i</td>
+          <td>n</td>
+        </tr>
+        <tr>
+          <td>C</td>
+          <td>L</td>
+          <td>L</td>
+          <td>T</td>
+          <td>I</td>
+          <td>-</td>
+          <td>+</td>
+          <td>H</td>
+          <td>II</td>
+          <td>II</td>
+          <td>II</td>
+          <td>II</td>
+          <td>II</td>
+          <td>II</td>
+          <td>II</td>
+          <td>±</td>
+        </tr>
+        <tr>
+          <td>D</td>
+          <td>u</td>
+          <td>r</td>
+          <td>m</td>
+          <td>u</td>
+          <td>k</td>
+          <td>r</td>
+          <td>m</td>
+          <td>li</td>
+          <td>+</td>
+          <td>j</td>
+          <td>r</td>
+          <td>■</td>
+          <td>■</td>
+          <td>■</td>
+          <td>■</td>
+        </tr>
+        <tr>
+          <td>E</td>
+          <td>α</td>
+          <td>θ</td>
+          <td>r</td>
+          <td>π</td>
+          <td>z</td>
+          <td>σ</td>
+          <td>μ</td>
+          <td>τ</td>
+          <td>δ</td>
+          <td>θ</td>
+          <td>Ω</td>
+          <td>δ</td>
+          <td>ω</td>
+          <td>φ</td>
+          <td>c</td>
+          <td>n</td>
+        </tr>
+        <tr>
+          <td>F</td>
+          <td>=</td>
+          <td>±</td>
+          <td>2</td>
+          <td>≤</td>
+          <td>ρ</td>
+          <td>j</td>
+          <td>÷</td>
+          <td>≈</td>
+          <td>o</td>
+          <td>·</td>
+          <td>√</td>
+          <td>n</td>
+          <td>2</td>
+          <td>■</td>
+        </tr>
+      </table>
+    </div>
+
+    <!-- Second Table -->
+    <div class="table" style="position: relative;top: 60px;left: 550px;">
+      <table border="1">
+        <tr>
+          <th>#</th>
+          <th>1</th>
+          <th>2</th>
+          <th>3</th>
+          <th>4</th>
+          <th>5</th>
+          <th>6</th>
+          <th>7</th>
+          <th>8</th>
+          <th>9</th>
+          <th>A</th>
+          <th>B</th>
+          <th>C</th>
+          <th>D</th>
+          <th>E</th>
+          <th>F</th>
+        </tr>
+        <tr>
+          <td>8</td>
+          <td>□</td>
+          <td>□</td>
+          <td>,</td>
+          <td>f</td>
+          <td>,</td>
+          <td>.</td>
+          <td>.</td>
+          <td>+</td>
+          <td>.</td>
+          <td>.</td>
+          <td>¥</td>
+          <td>S</td>
+          <td><</td>
+          <td>α</td>
+          <td>□</td>
+          <td>□</td>
+          <td>□</td>
+        </tr>
+        <tr>
+          <td>9</td>
+          <td>□</td>
+          <td>√</td>
+          <td>,</td>
+          <td>x</td>
+          <td>,</td>
+          <td>.</td>
+          <td>.</td>
+          <td>-</td>
+          <td>m</td>
+          <td>S</td>
+          <td>></td>
+          <td>α</td>
+          <td>□</td>
+          <td>□</td>
+          <td>¥</td>
+        </tr>
+        <tr>
+          <td>A</td>
+          <td></td>
+          <td>i</td>
+          <td>o</td>
+          <td>£</td>
+          <td>x</td>
+          <td>¥</td>
+          <td>i</td>
+          <td>S</td>
+          <td>.</td>
+          <td>⊕</td>
+          <td>a</td>
+          <td>«</td>
+          <td>−</td>
+          <td>—</td>
+          <td>⊕</td>
+          <td>—</td>
+        </tr>
+        <tr>
+          <td>B</td>
+          <td>o</td>
+          <td>±</td>
+          <td>a</td>
+          <td>s</td>
+          <td>.</td>
+          <td>μ</td>
+          <td>∃</td>
+          <td>.</td>
+          <td>i</td>
+          <td>o</td>
+          <td>»</td>
+          <td>kg</td>
+          <td>kg</td>
+          <td>kg</td>
+          <td>c</td>
+        </tr>
+        <tr>
+          <td>C</td>
+          <td>à</td>
+          <td>á</td>
+          <td>à</td>
+          <td>à</td>
+          <td>à</td>
+          <td>a</td>
+          <td>a</td>
+          <td>c</td>
+          <td>e</td>
+          <td>e</td>
+          <td>e</td>
+          <td>e</td>
+          <td>e</td>
+          <td>e</td>
+          <td>e</td>
+          <td>e</td>
+        </tr>
+        <tr>
+          <td>D</td>
+          <td>p</td>
+          <td>ñ</td>
+          <td>ô</td>
+          <td>ô</td>
+          <td>ô</td>
+          <td>×</td>
+          <td>Ø</td>
+          <td>ü</td>
+          <td>ü</td>
+          <td>ü</td>
+          <td>¥</td>
+          <td>p</td>
+          <td>b</td>
+          <td>b</td>
+        </tr>
+        <tr>
+          <td>E</td>
+          <td>à</td>
+          <td>á</td>
+          <td>à</td>
+          <td>à</td>
+          <td>a</td>
+          <td>a</td>
+          <td>c</td>
+          <td>e</td>
+          <td>e</td>
+          <td>e</td>
+          <td>e</td>
+          <td>e</td>
+          <td>e</td>
+          <td>e</td>
+          <td>e</td>
+        </tr>
+        <tr>
+          <td>F</td>
+          <td>ô</td>
+          <td>ä</td>
+          <td>ô</td>
+          <td>ô</td>
+          <td>ô</td>
+          <td>÷</td>
+          <td>ø</td>
+          <td>ü</td>
+          <td>ü</td>
+          <td>ü</td>
+          <td>ü</td>
+          <td>¥</td>
+          <td>b</td>
+          <td>b</td>
+        </tr>
+      </table>
+    </div>
+  
+  
+   </div>
+   <div id="footer">
+    <h5><a href="./video.html" id="loginLink"> home page</a> |<a href="../privcypolicy/index.html" id="loginLink">Privacy policy</a></h5>
+    <footer>© cplusplus.com, 2000-2023 - All rights reserved - v3.3.4s</footer>
+    <footer>Spotted an error? contact us</footer>
+  </div>
+  
+   
+
+   <script>
+     // Set a flag in localStorage when the Login button is clicked
+     function setLoginFlag() {
+       localStorage.setItem('loginPageVisited', 'true');
+     }
+
+     // Check if the login page has been visited
+     window.onload = function() {
+       if (localStorage.getItem('loginPageVisited') === 'true') {
+         // Remove the Login button
+         document.getElementById('login').remove();
+         // Clear the flag (optional, if you want to reset the state)
+         localStorage.removeItem('loginPageVisited');
+       }
+     };
+   </script>
+   <script>
+    // Toggle navigation menu
+ document.getElementById("menuToggle").addEventListener("click", function () {
+     document.getElementById("insidebox").classList.toggle("active");
+ });
+ 
+ // Toggle left sidebar
+ document.getElementById("leftMenuToggle").addEventListener("click", function() {
+     document.getElementById("leftsidebox").classList.toggle("active");
+ });
+ 
+    
+        </script>
+        <script>
+          document.getElementById("leftMenuToggle").addEventListener("click", function() {
+              var leftMenu = document.getElementById("leftsidebox");
+              leftMenu.classList.toggle("active");
+          });
+          </script>
+
+   <script src="./script.js"></script>
+   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

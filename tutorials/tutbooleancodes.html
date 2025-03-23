@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boolean Codes</title>
+    <link rel="stylesheet" href="tutboolean.css"/>
+
+</head>
+<body>
+
+   <!-- Header -->
+   <div id="upperbox">
+    <button id="menuToggle">☰ Menu</button>
+
+    <div id="insidebox">
+      <a href="./Article.html">
+        <button id="btn2"><h3 id="homebutton1" class="searchoptions">Article</h3></button>
+      </a>
+      <a href="../tutorials/tutASCII.html">
+        <button id="btn"><h3 id="homebutton" class="searchoptions">Tutorials</h3></button>
+      </a>
+      <a href="../Refrence/Refrence.html">
+        <button id="btn"><h3 id="homebutton" class="searchoptions">Reference</h3></button>
+      </a>
+      <a href="../Forum/forum.html">
+        <button id="btn"><h3 id="homebutton" class="searchoptions">Forum</h3></button>
+      </a>
+    </div>  
+    
+    <!-- Search Section -->
+    <div id="search">
+      <h3 id="wrtsearch">Search</h3>
+    </div>
+
+    <!-- Login Button -->
+    <div id="login">
+      <a href="../login/LOGIN.HTML" id="loginLink" onclick="setLoginFlag()">
+        <h3 id="wrtlogin">Login</h3>
+      </a>
+    </div>
+
+    <!-- Home Button -->
+    <a href="../video.html">
+      <button id="btn1"><h3 id="homebutton" class="searchoptions">Home</h3></button>
+    </a>
+
+    <!-- Logo Section -->
+    <div id="bg">
+      <img src="../assests/Screenshot 2025-03-17 180941.png" alt="logo" id="logo">
+    </div>
+   </div>
+   <button id="leftMenuToggle">☰ Show Menu</button>
+
+   <!-- Left Side Box -->
+   <div id="leftsidebox">
+    <div id="languagetxt">
+        <h3 id="c" style="position: relative;left: px;top: 80px;">C++</h3>
+        <a href="./Article.html" style="text-decoration: none;">
+        <div id="insideleftbox"> 
+            <h3 >Article</h3>
+        </div></a>
+        <div id="text">
+            <a href="./Article.html" id="loginLink">
+                <div class="Numericalbases"><h4>Algorithms</h4></div>
+            </a>
+            <a href="./Article.html" id="loginLink">
+                <div class="Numericalbases"><h4>Graphics and Multimedia</h4></div>
+            </a>
+            <a href="./Article.html" id="loginLink">
+                <div class="Numericalbases"><h4>Language Features</h4></div>
+            </a>
+            <a href="./Article.html" id="loginLink">
+                <div class="Numericalbases"><h4>Unix/Linux Programming</h4></div>
+            </a>
+            <a href="./Article.html" id="loginLink">
+                <div class="Numericalbases"><h4>Tips and Tricks</h4></div>
+            </a>
+        </div>
+    </div>
+</div>
+
+   <!-- Main Content Box -->
+   <div id="ASCIICODEBOX">
+       <h3>Tutorials: Boolean Codes</h3>
+       <h2>Boolean Codes</h2>
+       <hr id="LINE">
+       <p>Boolean codes are fundamental in computer science and digital electronics...</p>
+       
+       <h3>Boolean Logic</h3>
+       <p>Boolean logic consists of operations such as AND, OR, and NOT...</p>
+       
+       <table>
+           <thead>
+               <tr><th>Operation</th><th>Input A</th><th>Input B</th><th>Output</th></tr>
+           </thead>
+           <tbody>
+               <tr><td>AND</td><td>0</td><td>0</td><td>0</td></tr>
+               <tr><td>AND</td><td>1</td><td>1</td><td>1</td></tr>
+               <tr><td>OR</td><td>0</td><td>1</td><td>1</td></tr>
+               <tr><td>NOT</td><td>1</td><td>-</td><td>0</td></tr>
+           </tbody>
+       </table>
+   </div>
+   <script>
+   // Toggle navigation menu
+document.getElementById("menuToggle").addEventListener("click", function () {
+    document.getElementById("insidebox").classList.toggle("active");
+});
+
+// Toggle left sidebar
+document.getElementById("leftMenuToggle").addEventListener("click", function() {
+    document.getElementById("leftsidebox").classList.toggle("active");
+});
+
+   
+       </script>
+       <script>
+         document.getElementById("leftMenuToggle").addEventListener("click", function() {
+             var leftMenu = document.getElementById("leftsidebox");
+             leftMenu.classList.toggle("active");
+         });
+         </script>
+         
+
+   <!-- Footer -->
+   <div id="footer">
+       <h5><a href="./video.html" id="loginLink">Home</a> | <a href="../privcypolicy/index.html" id="loginLink">Privacy Policy</a></h5>
+       <footer>© cplusplus.com, 2000-2023 - All rights reserved</footer>
+   </div>
+   <script>
+    // Set a flag in localStorage when the Login button is clicked
+    function setLoginFlag() {
+      localStorage.setItem('loginPageVisited', 'true');
+    }
+
+    // Check if the login page has been visited
+    window.onload = function() {
+      if (localStorage.getItem('loginPageVisited') === 'true') {
+        // Remove the Login button
+        document.getElementById('login').remove();
+        // Clear the flag (optional, if you want to reset the state)
+        localStorage.removeItem('loginPageVisited');
+      }
+    };
+  </script>
+
+   <script src="./script.js"></script>
+</body>
+</html>
