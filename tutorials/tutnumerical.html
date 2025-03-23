@@ -1,0 +1,875 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="tutnumerical.css"/>
+    <style>
+      @media screen and (max-width: 1024px) {
+    #upperbox {
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 10px;
+        height: auto;
+    }
+
+    #insidebox {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 5px;
+    }
+
+    #btn, #btn1, #btn2 {
+        width: 100px;
+        height: 35px;
+        font-size: 14px;
+    }
+
+    #search, #login {
+        width: 150px;
+        height: 35px;
+        font-size: 14px;
+    }
+
+    #bg {
+        width: 180px;
+        height: 50px;
+    }
+
+    #logo {
+        height: 50px;
+    }
+
+    #leftsidebox {
+        width: 20%;
+        padding: 10px;
+        font-size: 14px;
+    }
+
+    #ASCIICODEBOX {
+        left: 200px;
+        width: 80%;
+        height: auto;
+    }
+
+    #footer {
+        width: 100%;
+        position: static;
+    }
+}
+
+/* Mobile Phones (max-width: 767px) */
+@media screen and (max-width: 767px) {
+    #upperbox {
+        flex-direction: column;
+        align-items: center;
+        height: 170px;
+     
+        width: 420px;
+    }
+
+    #insidebox {
+        flex-direction: column;
+        align-items: center;
+        gap: 5px;
+    }
+
+    #btn, #btn1, #btn2 {
+        width: 90%;
+        height: 40px;
+        font-size: 16px;
+    }
+
+    #search, #login {
+        width: 90%;
+        height: 40px;
+        font-size: 16px;
+        margin-top: 5px;
+    }
+
+    #bg {
+        width: 200px;
+        height: 60px;
+    }
+
+    #logo {
+        height: 60px;
+    }
+
+    #leftsidebox {
+        width: 90%;
+        margin: 0 auto;
+        font-size: 16px;
+        text-align: center;
+    }
+
+    #ASCIICODEBOX {
+        width: 95%;
+        left: 0;
+        top: 0;
+        height: auto;
+        margin: 20px auto;
+        padding: 10px;
+    }
+
+   
+
+    #footer {
+        width: 100%;
+        text-align: center;
+        position: static;
+        margin-top: -5250px;
+        z-index: 1000;
+    }
+}
+/* Make images responsive */
+@media screen and (max-width: 767px) {
+    img {
+        max-width: 100%;
+        height: auto;
+        display: block;
+        margin: 10px auto; /* Center images */
+    }
+
+    /* Reduce excessive padding/margins */
+    #ASCIICODEBOX, #numbers {
+        width: 95%;
+        left: 0;
+        padding: 10px;
+        margin: 20px auto;
+        height: 3000px;
+    }
+
+    /* Scale tables for mobile */
+    table {
+        width: 100%;
+        display: block;
+        overflow-x: auto; /* Enable scrolling if necessary */
+    }
+
+    th, td {
+        padding: 5px;
+        font-size: 14px; /* Reduce font size */
+    }
+
+    /* Adjust text alignment */
+    p, footer {
+        text-align: justify;
+        font-size: 16px;
+    }
+
+    /* Hide extra descriptions to make space */
+    #extra-content {
+        display: none;
+    }
+
+    /* Adjust section positioning */
+    #numbers {
+        position: relative;
+        top: 0;
+        right: 0;
+    }
+}
+
+/* Improve tablet view */
+@media screen and (max-width: 1024px) {
+    #ASCIICODEBOX, #numbers {
+        width: 90%;
+        left: 5%;
+        padding: 15px;
+        height: auto;
+    }
+}
+
+/* Hide menu by default on smaller screens */
+@media screen and (max-width: 1024px) {
+    #insidebox {
+        display: none; /* Hide the menu */
+        flex-direction: column;
+        position: absolute;
+        top: 80px;
+        left: 0;
+        width: 100%;
+        background-color: #2c3e50;
+        padding: 10px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    }
+
+   
+    /* Show when menu is active */
+    #insidebox.active {
+        display: flex;
+    }
+
+    /* Menu button styles */
+    #menuToggle {
+      width: 97px;
+      
+        display: block;
+        background-color: #3498db;
+        color: white;
+        border: none;
+        font-size: 18px;
+        padding: 10px 15px;
+        cursor: pointer;
+        border-radius: 5px;
+    }
+
+    #menuToggle:hover {
+        background-color: #2980b9;
+    }
+}
+
+/* Hide menu button on desktop */
+@media screen and (min-width: 1025px) {
+    #menuToggle {
+        display: none;
+    }
+}
+/* Hide left-side box by default on smaller screens */
+@media screen and (max-width: 1024px) {
+    #leftsidebox {
+        display: none;
+        position: absolute;
+        top: 90px;
+        left: 10px;
+        width: 200px;
+        background-color: #34495e;
+        padding: 15px;
+        border-radius: 10px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    }
+
+    /* Show when active */
+    #leftsidebox.active {
+        display: block;
+    }
+
+    /* Button styles */
+    #leftMenuToggle {
+        display: block;
+        background-color: #3498db;
+        color: white;
+        border: none;
+        font-size: 16px;
+        padding: 10px 15px;
+        cursor: pointer;
+        border-radius: 5px;
+        margin: 10px;
+    }
+
+    #leftMenuToggle:hover {
+        background-color: #2980b9;
+    }
+}
+
+/* Hide menu button on desktop */
+@media screen and (min-width: 1025px) {
+    #leftMenuToggle {
+        display: none;
+    }
+}
+/* Tablet View (768px - 1024px) */
+@media screen and (max-width: 1024px) {
+    #ASCIICODEBOX {
+        width: 90%;  /* Adjust width for better fit */
+        left: 5%;    /* Center it properly */
+        top: 0;
+        padding: 15px;
+        height: auto; /* Allow dynamic height */
+    }
+}
+
+
+/* Mobile View (max-width: 767px) */
+@media screen and (max-width: 767px) {
+    #ASCIICODEBOX {
+        width: 95%;  /* Take most of the screen width */
+        left: 2.5%;  /* Center it */
+        top: 0;
+        padding: 10px;
+        height: auto; /* Adjust height automatically */
+    }
+
+    
+
+    #LINE {
+        width: 100%; /* Make sure the horizontal line spans correctly */
+    }
+}
+/* Tablet View (768px - 1024px) */
+@media screen and (max-width: 1024px) {
+    #ASCIICODEBOX {
+        width: calc(100% - 40px); /* Take full width with padding */
+        left: 0;
+        margin: 20px auto;
+        padding: 15px;
+        height: auto; /* Adjust height dynamically */
+        position: relative;
+    }
+    #leftsidebox {
+        width: 25%; /* Adjust width for better fit */
+        position: absolute;
+        top: 100px;
+        left: 0;
+    }
+    #leftsidebox.active {
+        display: block;
+        position: relative;
+        width: 100%; /* Take full width when visible */
+    }
+
+    /* Ensure the content box doesn't overlap with the left-side menu */
+    #leftsidebox.active + #ASCIICODEBOX {
+        width: calc(100% - 10px);
+        left: 0;
+    }
+}
+/* Mobile View (max-width: 767px) */
+@media screen and (max-width: 767px) {
+    #ASCIICODEBOX {
+        width: 95%;
+        left: 2.5%;
+        top: 0;
+        padding: 10px;
+        height: auto;
+        position: relative;
+        margin-top: 20px;
+    }
+    #leftsidebox {
+        width: 100%; /* Full width for mobile */
+        position: relative;
+        display: none; /* Hide by default */
+    }
+
+    #leftsidebox.active {
+        display: block;
+    }
+
+    /* Prevent content overlap */
+    #leftsidebox.active + #ASCIICODEBOX {
+        margin-top: 20px;
+    }
+}
+@media  (min-width:319px) and (max-width:420px) {
+  #maincontent{
+    display: flex;
+    align-content: space-evenly;
+    justify-content: space-evenly;
+  }
+ 
+}
+/* Default (Desktop) - No Changes */
+#ASCIICODEBOX {
+    position: relative;
+    left: 275px;
+    width: 1200px;
+    height: auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Tablet View (768px - 1024px) */
+@media screen and (max-width: 1024px) {
+    #ASCIICODEBOX {
+        width: 90%;  /* Adjust to fit screen */
+        left: 5%;    /* Center it properly */
+        margin: 20px auto;
+        padding: 15px;
+        height: auto; /* Allow flexible height */
+    }
+
+    /* Stack articles */
+    #maincontent {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+}
+
+/* Mobile View (max-width: 767px) */
+/* Mobile View (max-width: 420px) */
+@media (min-width:319px) and (max-width: 420px) {
+    #ASCIICODEBOX {
+        width: 95%;
+        left: 2.5%;
+        margin-top: 20px;
+        padding: 10px;
+        height: 7100px;
+        margin-right: 0px;
+        margin-left: 0px;
+    }
+
+    #menuToggle {
+        position: relative;
+        left: 190px;
+        width: 97px;
+        display: block;
+        background-color: #3498db;
+        color: white;
+        border: none;
+        font-size: 18px;
+        padding: 10px 15px;
+        cursor: pointer;
+        border-radius: 5px;
+    }
+
+    #menuToggle:hover {
+        background-color: #2980b9;
+    }
+
+    #search {
+        position: relative;
+        top: 45px;
+        right: 10px;
+        width: 260px;
+    }
+    #loginLink{
+      text-decoration: none;
+      color: white;
+    }
+
+    #logo {
+        height: 50px;
+    }
+
+    #bg {
+        background-color: #27445D;
+        position: relative;
+        top: -64px;
+        right: 300px;
+    }
+
+    #btn1 {
+        position: relative;
+        top: 30px;
+        left: -55px;
+        width: 96px;
+        border: 5px;
+    }
+
+    #login {
+        color: white;
+        background-color: #3498db;
+        position: relative;
+        top: -3px;
+        width: 96px;
+        left: 190px;
+        border-radius: 5px;
+    }
+#numbers{
+  position: relative;
+  top: -5380px;
+  right: 700px;
+  width: 70%;
+}
+    /* Stack articles vertically */
+    #maincontent {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+
+    #LINE {
+        width: 100%;
+    }
+}
+
+/* General Styling */
+#ASCIICODEBOX {
+    position: relative;
+    top: -10px;
+    left: 0px;
+    border: 2px dashed #3498db;
+    max-width: 1200px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin: auto;
+}
+
+#LINE {
+    background-color: #27445D;
+    height: 2px;
+    width: 100%;
+    margin-bottom: 20px;
+}
+/* Use Flexbox for Layout */
+#maincontent {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+/* Prevent horizontal scrolling */
+html, body {
+    margin: 0;
+    padding: 0;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+/* Ensure the container does not exceed viewport width */
+#ASCIICODEBOX {
+    max-width: 100%;
+    overflow: hidden;
+    box-sizing: border-box;
+    padding: 20px;
+}
+
+/* Flex container should wrap properly */
+#maincontent {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+/* 🛠 Fix: Ensure Menu is Visible & Functional */
+
+/* Show menu when toggled */
+.menu-open #menu{
+    
+    visibility: visible !important;
+}
+
+/* Ensure the main content moves down when the menu is open */
+.menu-open #maincontent {
+    margin-top: 200px !important; 
+    visibility: inherit;/* Push content down */
+}
+
+/* Navbar stays at the top */
+.navbar {
+    position: relative !important;
+    z-index: 1000 !important;
+}
+
+
+
+
+/* 📌 Hide menu by default for tablets and mobiles */
+@media screen and (max-width: 1024px) {
+    #insidebox {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 80px;
+        left: 0;
+        width: 100%;
+        background-color: #2c3e50;
+        padding: 10px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        z-index: 1000;
+    }
+
+    /* 📌 Show menu when active */
+    #insidebox.active {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    /* 📌 Menu button */
+    #menuToggle {
+        display: block;
+        background-color: #3498db;
+        color: white;
+        border: none;
+        font-size: 18px;
+        padding: 10px 15px;
+        cursor: pointer;
+        border-radius: 5px;
+    }
+
+    #menuToggle:hover {
+        background-color: #2980b9;
+    }
+}
+
+/* 📌 Hide menu button on desktop */
+@media screen and (min-width: 1025px) {
+    #menuToggle {
+        display: none;
+    }
+}
+
+/* 📌 Hide left sidebar by default */
+@media screen and (max-width: 1024px) {
+    #leftsidebox {
+        display: none;
+        position: absolute;
+        top: 90px;
+        left: 10px;
+        width: 200px;
+        background-color: #34495e;
+        padding: 15px;
+        border-radius: 10px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        z-index: 1000;
+    }
+
+    /* 📌 Show sidebar when active */
+    #leftsidebox.active {
+        display: block;
+    }
+
+    /* 📌 Sidebar button */
+    #leftMenuToggle {
+        display: block;
+        background-color: #3498db;
+        color: white;
+        border: none;
+        font-size: 16px;
+        padding: 10px 15px;
+        cursor: pointer;
+        border-radius: 5px;
+        margin: 10px;
+    }
+
+    #leftMenuToggle:hover {
+        background-color: #2980b9;
+    }
+}
+
+/* 📌 Hide sidebar button on desktop */
+@media screen and (min-width: 1025px) {
+    #leftMenuToggle {
+        display: none;
+    }
+}
+
+
+    </style>
+</head>
+<body>
+
+   <!-- Header -->
+   <div id="upperbox">
+    <button id="menuToggle">☰ Menu</button>
+
+    <div id="insidebox">
+      <a href="./Article.html">
+        <button id="btn2"><h3 id="homebutton1" class="searchoptions">Article</h3></button>
+      </a>
+      <a href="../tutorials/tutASCII.html">
+        <button id="btn"><h3 id="homebutton" class="searchoptions">Tutorials</h3></button>
+      </a>
+      <a href="../Refrence/Refrence.html">
+        <button id="btn"><h3 id="homebutton" class="searchoptions">Reference</h3></button>
+      </a>
+      <a href="../Forum/forum.html">
+        <button id="btn"><h3 id="homebutton" class="searchoptions">Forum</h3></button>
+      </a>
+    </div>  
+    
+    <!-- Search Section -->
+    <div id="search">
+      <h3 id="wrtsearch">Search</h3>
+    </div>
+
+    <!-- Login Button -->
+    <div id="login">
+      <a href="../login/LOGIN.HTML" id="loginLink" onclick="setLoginFlag()">
+        <h3 id="wrtlogin">Login</h3>
+      </a>
+    </div>
+
+    <!-- Home Button -->
+    <a href="../video.html">
+      <button id="btn1"><h3 id="homebutton" class="searchoptions">Home</h3></button>
+    </a>
+
+    <!-- Logo Section -->
+    <div id="bg">
+      <img src="../assests/Screenshot 2025-03-17 180941.png" alt="logo" id="logo">
+    </div>
+   </div>
+   <button id="leftMenuToggle">☰ Show Menu</button>
+
+   <!-- Left Side Box -->
+   <div id="leftsidebox">
+    <div id="languagetxt">
+        <h3 id="c" style="position: relative;left: px;top: 80px;">C++</h3>
+        <a href="./Article.html" style="text-decoration: none;">
+        <div id="insideleftbox"> 
+            <h3 >Article</h3>
+        </div></a>
+        <div id="text">
+            <a href="./Article.html" id="loginLink">
+                <div class="Numericalbases"><h4>Algorithms</h4></div>
+            </a>
+            <a href="./Article.html" id="loginLink">
+                <div class="Numericalbases"><h4>Graphics and Multimedia</h4></div>
+            </a>
+            <a href="./Article.html" id="loginLink">
+                <div class="Numericalbases"><h4>Language Features</h4></div>
+            </a>
+            <a href="./Article.html" id="loginLink">
+                <div class="Numericalbases"><h4>Unix/Linux Programming</h4></div>
+            </a>
+            <a href="./Article.html" id="loginLink">
+                <div class="Numericalbases"><h4>Tips and Tricks</h4></div>
+            </a>
+        </div>
+    </div>
+</div>
+   <!-- Main Content -->
+   <div id="ASCIICODEBOX">
+     <h3 style="position: relative;top: -10px;left: 15px; font-size: 18px;">Tutorials : Numerical Bases</h3>
+     <h2 style="position: relative;top: 20px;left: 15px;">Numerical Bases</h2>
+     <hr id="LINE">
+     <p style="position: relative;left: 15px;font-size: 18px;">Since we were kids, we have all used decimals to express quantities. This nomenclature that seems so logical to us may not seem so to an inhabitant of Classical Rome. For them, each symbol that they wrote to express a number always represented the same value:</p>
+     <img src="../assests/Screenshot 2025-03-19 202227.png" alt="" style="position: relative;left: 15px;">
+     <img src="../assests/Screenshot 2025-03-19 202234.png" alt="" style="position: relative;left: 15px;">
+     <p style="position: relative;left: 15px;font-size: 18px;">In these cases, our symbol 1 does not have always a value of one (or I in Roman numbers). For example, in the second case, the symbol 1 represents a value of ten (or X in Roman) and in the third one, 1 represents a value of one hundred (or C).</p>
+     <p style="position: relative;top:0px;left: 15px;font-size: 18px;">For example: 275 is not equivalent to 2+7+5, it could rather be decomposed as 200+70+5:</p>
+     <p style="position: relative;top: 2px;left: 15px;font-size: 18px;">This is because our system is a positional numeral system. Therefore, the value of a given digit depends on its position within the entire number being represented. All the above can be mathematically represented in a very simple way. For example, to represent the value 182736 we can assume that each digit is the product of itself multiplied by 10 powered to its place as exponent, beginning from the right with 100, following with 101, 102, and so on:</p>
+     <img src="../assests/Screenshot 2025-03-19 203024.png" alt="" style="position: relative;top: 2px;left: 15px;font-size: 18px;">
+   </div>
+
+   <!-- Octal Number Section -->
+   <div id="numbers">
+     <h2 style="position: relative;top:20px;">Octal Number</h2>
+     <hr id="LINE" style="position: relative;left: -15px;">
+     <p style="position: relative;top:0px;left: 15px;font-size: 18px;">Like our "normal" numbers are base 10 (or radix 10) because we have 10 different digits (from the 0 to the 9): 0123456789</p>
+     <p style="position: relative;top:0px;left: 15px;font-size: 18px;">the octals numbers include only the representations for the values from 0 to 7: 01234567</p>
+     <footer style="position: relative;top:0px;left: 15px;font-size: 18px;">and, therefore, its mathematical base is 8. In C++ octal numbers are denoted by beginning always with a 0 digit. Let's see how we would write the first numbers in octal:</footer>
+     <table style="position: relative;top:0px;left: 15px;font-size: 18px;">
+       <thead>
+         <tr>
+           <th>Octal</th>
+           <th>Decimal</th>
+           <th>Description</th>
+         </tr>
+       </thead>
+       <tbody>
+         <tr><td>0</td><td>0</td><td>(zero)</td></tr>
+         <tr><td>01</td><td>1</td><td>(one)</td></tr>
+         <tr><td>02</td><td>2</td><td>(two)</td></tr>
+         <tr><td>03</td><td>3</td><td>(three)</td></tr>
+         <tr><td>04</td><td>4</td><td>(four)</td></tr>
+         <tr><td>05</td><td>5</td><td>(five)</td></tr>
+         <tr><td>06</td><td>6</td><td>(six)</td></tr>
+         <tr><td>07</td><td>7</td><td>(seven)</td></tr>
+         <tr><td>010</td><td>8</td><td>(eight)</td></tr>
+         <tr><td>011</td><td>9</td><td>(nine)</td></tr>
+         <tr><td>012</td><td>10</td><td>(ten)</td></tr>
+         <tr><td>013</td><td>11</td><td>(eleven)</td></tr>
+         <tr><td>014</td><td>12</td><td>(twelve)</td></tr>
+         <tr><td>015</td><td>13</td><td>(thirteen)</td></tr>
+         <tr><td>016</td><td>14</td><td>(fourteen)</td></tr>
+         <tr><td>017</td><td>15</td><td>(fifteen)</td></tr>
+         <tr><td>020</td><td>16</td><td>(sixteen)</td></tr>
+         <tr><td>021</td><td>17</td><td>(seventeen)</td></tr>
+       </tbody>
+     </table>
+     <p style="position: relative;top:0px;left: 15px;font-size: 18px;">In C++, hexadecimal numbers are preceded by 0x (zero, x). Once again we can use the same method to translate a number from a base to another one:</p>
+     <img src="../assests/Screenshot 2025-03-19 205850.png" alt="">
+   </div>
+
+   <!-- Hexadecimal Number Section -->
+   <div id="numbers">
+     <h2 style="position: relative;top:20px;">Hexadecimal Number</h2>
+     <hr id="LINE" style="position: relative;left:-15px;">
+     <p style="position: relative;top:0px;left: 15px;font-size: 18px;">Octal and hexadecimal numbers have a considerable advantage over our decimal numbers in the world of bits, and is that their bases (8 and 16) are perfect multiples of 2 (23 and 24, respectively), which allows us to make easier conversions from these bases to binary than from decimal numbers (whose base is 2x5).</p>
+     <footer style="position: relative;top:0px;left: 15px;font-size: 18px;">For example, suppose that we want to translate the following binary sequence to numbers of other bases: 110011111010010100</footer>
+     <p style="position: relative;top:0px;left: 15px;font-size: 18px;">In order to translate it to decimal we would need to conduct a mathematical operation similar to the one we have used previously to convert from hexadecimal, which would give us the decimal number 212628.</p>
+     <table style="position: relative;top:0px;left: 15px;font-size: 18px;">
+       <thead>
+         <tr>
+           <th>Hexadecimal</th>
+           <th>Decimal</th>
+           <th>Word</th>
+         </tr>
+       </thead>
+       <tbody>
+         <tr><td>0x0</td><td>0</td><td>(zero)</td></tr>
+         <tr><td>0x1</td><td>1</td><td>(one)</td></tr>
+         <tr><td>0x2</td><td>2</td><td>(two)</td></tr>
+         <tr><td>0x3</td><td>3</td><td>(three)</td></tr>
+         <tr><td>0x4</td><td>4</td><td>(four)</td></tr>
+         <tr><td>0x5</td><td>5</td><td>(five)</td></tr>
+         <tr><td>0x6</td><td>6</td><td>(six)</td></tr>
+         <tr><td>0x7</td><td>7</td><td>(seven)</td></tr>
+         <tr><td>0x8</td><td>8</td><td>(eight)</td></tr>
+         <tr><td>0x9</td><td>9</td><td>(nine)</td></tr>
+         <tr><td>0xA</td><td>10</td><td>(ten)</td></tr>
+         <tr><td>0xB</td><td>11</td><td>(eleven)</td></tr>
+         <tr><td>0xC</td><td>12</td><td>(twelve)</td></tr>
+         <tr><td>0xD</td><td>13</td><td>(thirteen)</td></tr>
+         <tr><td>0xE</td><td>14</td><td>(fourteen)</td></tr>
+         <tr><td>0xF</td><td>15</td><td>(fifteen)</td></tr>
+         <tr><td>0x10</td><td>16</td><td>(sixteen)</td></tr>
+         <tr><td>0x11</td><td>17</td><td>(seventeen)</td></tr>
+       </tbody>
+     </table>
+     <p style="position: relative;top:0px;left: 15px;font-size: 18px;">Thus, for example, the number 17 (seventeen, or XVII in Roman) it is expressed 021 as an octal number in C++. We can apply the same mechanism that we saw previously for decimal numbers to the octal numbers simply by considering that its base is 8. For example, taking the octal number 071263:</p>
+     <img src="../assests/Screenshot 2025-03-19 211955.png" alt="">
+   </div>
+
+   <!-- Binary Number Section -->
+   <div id="numbers">
+     <h2 style="position: relative;top:20px;">Binary Number</h2>
+     <hr id="LINE" style="position: relative;left:-15px;">
+     <p style="position: relative;top:0px;left: 15px;font-size: 18px;">Octal and hexadecimal numbers have a considerable advantage over our decimal numbers in the world of bits, and  that their bases (8 and 16) are perfect multiples of 2 (23 and 24, respectively), which allows us to make easier conversions from these bases to binary than from decimal numbers (whose base is 2x5).
+     <footer style="position: relative;top:0px;left: 15px;font-size: 18px;">For example, suppose that we want to translate the following binary sequence to numbers of other bases: 110011111010010100</footer></p>
+     <p style="position: relative;top:0px;left: 15px;font-size: 18px;">In order to translate it to decimal we would need to conduct a mathematical operation similar to the one we have used previously to convert from hexadecimal, which would give us the decimal number 212628.</p>
+     <p style="position: relative;top:0px;left: 15px;font-size: 18px;">Nevertheless to pass this sequence to octal it will only take us some seconds and even the less skilled in mathematics can do just b seeing 8 is 23, we will separate the binary value in groups of 3 numbers: 110 011 111 010 010 100</p>
+     <p style="position: relative;top:0px;left: 15px;font-size: 18px;">giving the number 637224 as result. This same process can be inversely performed to pass from octal to binary. In order to conduct the operation hexadecimal numbers we only have to perform the same process but separating the binary value in groups of 4 numbers, because 16 = 24: 11 0011 1110 1001 0100</p>
+     <p style="position: relative;top:0px;left: 15px;font-size: 18px;">3    3    E    9    4</p>
+     <p style="position: relative;top:0px;left: 15px;font-size: 18px;">Therefore, the binary expression 110011111010010100 can be represented in C++ either as 212628 (decimal), as 0637224 (octal) or as 0x33e94 (hexadecimal).</p>
+   </div>
+
+   <div id="footer">
+    <h5><a href="./video.html" id="loginLink"> home page</a> |<a href="../privcypolicy/index.html" id="loginLink">Privacy policy</a></h5>
+    <footer>© cplusplus.com, 2000-2023 - All rights reserved - v3.3.4s</footer>
+    <footer>Spotted an error? contact us</footer>
+  </div>
+
+   <script>
+     // Set a flag in localStorage when the Login button is clicked
+     function setLoginFlag() {
+       localStorage.setItem('loginPageVisited', 'true');
+     }
+
+     // Check if the login page has been visited
+     window.onload = function() {
+       if (localStorage.getItem('loginPageVisited') === 'true') {
+         // Remove the Login button
+         document.getElementById('login').remove();
+         // Clear the flag (optional, if you want to reset the state)
+         localStorage.removeItem('loginPageVisited');
+       }
+     };
+   </script>
+   <script>
+    // Toggle navigation menu
+ document.getElementById("menuToggle").addEventListener("click", function () {
+     document.getElementById("insidebox").classList.toggle("active");
+ });
+ 
+ // Toggle left sidebar
+ document.getElementById("leftMenuToggle").addEventListener("click", function() {
+     document.getElementById("leftsidebox").classList.toggle("active");
+ });
+ 
+    
+        </script>
+        <script>
+          document.getElementById("leftMenuToggle").addEventListener("click", function() {
+              var leftMenu = document.getElementById("leftsidebox");
+              leftMenu.classList.toggle("active");
+          });
+          </script>
+
+   <script src="../article/script.js"></script>
+   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
