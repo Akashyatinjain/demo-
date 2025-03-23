@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Article.css"/>
+    <style>
+      /* Tablets (iPads, 768px - 1024px) */
+      
+
+    </style>
+  
+</head>
+<body>
+   <!--header-->
+   <div id="upperbox">
+    <button id="menuToggle">☰ Menu</button>
+
+    <div id="insidebox">
+      <a href="./Article.html">
+        <button id="btn2"><h3 id="homebutton1" class="searchoptions">Article</h3></button>
+      </a>
+      <a href="../tutorials/tutASCII.html">
+        <button id="btn"><h3 id="homebutton" class="searchoptions">Tutorials</h3></button>
+      </a>
+      <a href="../Refrence/Refrence.html">
+        <button id="btn"><h3 id="homebutton" class="searchoptions">Reference</h3></button>
+      </a>
+      <a href="../Forum/forum.html">
+        <button id="btn"><h3 id="homebutton" class="searchoptions">Forum</h3></button>
+      </a>
+    </div>  
+    
+    <!-- Search Section -->
+    <div id="search">
+      <h3 id="wrtsearch">Search</h3>
+    </div>
+
+    <!-- Login Button -->
+    <div id="login">
+      <a href="../login/LOGIN.HTML" id="loginLink" onclick="setLoginFlag()">
+        <h3 id="wrtlogin" ID="loginLink">Login</h3>
+      </a>
+    </div>
+
+    <!-- Home Button -->
+    <a href="../video.html">
+      <button id="btn1"><h3 id="homebutton" class="searchoptions">Home</h3></button>
+    </a>
+
+    <!-- Logo Section -->
+    <div id="bg">
+      <img src="../assests/Screenshot 2025-03-17 180941.png" alt="logo" id="logo">
+    </div>
+   </div>
+   <button id="leftMenuToggle">☰ Show Menu</button>
+
+   <!-- Left Side Box -->
+   <div id="leftsidebox">
+    <div id="languagetxt">
+        <h3 id="c" style="position: relative;left: px;top: 80px;">C++</h3>
+        <a href="./Article.html" style="text-decoration: none;">
+        <div id="insideleftbox"> 
+            <h3 >Article</h3>
+        </div></a>
+        <div id="text">
+            <a href="./Article.html" id="loginLink">
+                <div class="Numericalbases"><h4>Algorithms</h4></div>
+            </a>
+            <a href="./Article.html" id="loginLink">
+                <div class="Numericalbases"><h4>Graphics and Multimedia</h4></div>
+            </a>
+            <a href="./Article.html" id="loginLink">
+                <div class="Numericalbases"><h4>Language Features</h4></div>
+            </a>
+            <a href="./Article.html" id="loginLink">
+                <div class="Numericalbases"><h4>Unix/Linux Programming</h4></div>
+            </a>
+            <a href="./Article.html" id="loginLink">
+                <div class="Numericalbases"><h4>Tips and Tricks</h4></div>
+            </a>
+        </div>
+    </div>
+</div>
+
+
+   <!-- Main Content -->
+   <div id="ASCIICODEBOX">
+    <h3 style="font-size: 18px;">Article</h3>
+    <h2 style="font-size: 25px;">Article</h2>
+    <hr id="LINE">
+    <div id="maincontent">
+
+        <div class="article-box">
+            <h3>How to avoid bugs using modern C++</h3>
+            <p>Categories: Tips and Tricks, Standard Library, Language Features, How-To, C++ 11</p>
+            <footer style="color:blue;">1 March 2024</footer>
+            <div class="rating">
+                <span class="active">&#9733;</span>
+                <span class="active">&#9733;</span>
+                <span class="active">&#9733;</span>
+                <span class="active">&#9733;</span>
+                <span>&#9733;</span>
+                <span class="votes">4.3/5 (919 votes)</span>
+            </div>
+        </div>
+
+        <div class="article-box">
+            <h3>Split a String</h3>
+            <p>Categories: How-To, C++ 11, Tips and Tricks</p>
+            <footer style="color:blue;">2 September 2023</footer>
+            <div class="rating">
+                <span class="active">&#9733;</span>
+                <span class="active">&#9733;</span>
+                <span>&#9733;</span>
+                <span>&#9733;</span>
+                <span>&#9733;</span>
+                <span class="votes">2/5 (50 votes)</span>
+            </div>
+        </div>
+
+        <div class="article-box">
+            <h3>Android Kernel: Lacking in Modularity</h3>
+            <p>Categories: Tips and Tricks, Source Code, How-To, C++ 11</p>
+            <footer style="color:blue;">5 May 2004</footer>
+            <div class="rating">
+                <span class="active">&#9733;</span>
+                <span class="active">&#9733;</span>
+                <span class="active">&#9733;</span>
+                <span class="active">&#9733;</span>
+                <span>&#9733;</span>
+                <span class="votes">4.3/5 (120 votes)</span>
+            </div>
+        </div>
+
+        <div class="article-box">
+            <h3>Finding Skype's Default Account Name</h3>
+            <p>Categories: How-To</p>
+            <footer style="color:blue;">16 March 2025</footer>
+            <div class="rating">
+                <span class="active">&#9733;</span>
+                <span class="active">&#9733;</span>
+                <span class="active">&#9733;</span>
+                <span>&#9733;</span>
+                <span>&#9733;</span>
+                <span class="votes">3/5 (999 votes)</span>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+
+
+     <!-- footer -->
+     <div id="footer">
+      <h5><a href="../video.html" id="loginLink"> home page</a> | <a href="../privcypolicy/index.html" id="loginLink">Privacy policy</a></h5>
+      <footer>© cplusplus.com, 2000-2023 - All rights reserved - v3.3.4s</footer>
+      <footer>Spot an error? contact us</footer>
+    </div>
+   </div>
+   <script>
+ // Toggle navigation menu
+document.getElementById("menuToggle").addEventListener("click", function () {
+    document.getElementById("insidebox").classList.toggle("active");
+});
+
+// Toggle left sidebar
+document.getElementById("leftMenuToggle").addEventListener("click", function() {
+    document.getElementById("leftsidebox").classList.toggle("active");
+});
+
+
+    </script>
+    <script>
+      document.getElementById("leftMenuToggle").addEventListener("click", function() {
+          var leftMenu = document.getElementById("leftsidebox");
+          leftMenu.classList.toggle("active");
+      });
+      </script>
+      
+   
+
+
+
+   <script src="script.js"></script>
+   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
