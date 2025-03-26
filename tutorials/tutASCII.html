@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ASCII Codes Tutorial - C++ Reference</title>
+    <style>
+        /* CSS Variables for consistent theming */
+       
+    </style>
+    <link rel="stylesheet" href="tut.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header id="header">
+        <div class="logo-container">
+            <img src="../assests/Screenshot 2025-03-17 180941.png" alt="C++ Logo" id="logo">
+        </div>
+        
+        <button id="menuToggle" aria-label="Toggle navigation menu">☰ Menu</button>
+        
+        <nav id="mainNav">
+            <ul>
+                <li><a href="../article/Article.html" id="loginLink">Article</a></li>
+                <li><a href="../tutorials/tutASCII.html" id="loginLink" class="active">Tutorials</a></li>
+                <li><a href="../Refrence/Refrence.html" id="loginLink">Reference</a></li>
+                <li><a href="../Forum/forum.html" id="loginLink">Forum</a></li>
+            </ul>
+        </nav>
+        
+        <div class="search-login-container">
+            <div class="search-box">
+                <input type="text" placeholder="Search tutorials..." aria-label="Search tutorials">
+                <button type="submit">Search</button>
+            </div>
+            <a href="../login/LOGIN.HTML" class="login-btn" id="loginLink">Login</a>
+            <a href="../video.html" class="nav-btn">
+                <h3>Home</h3>
+            </a>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <button id="leftMenuToggle" aria-label="Toggle sidebar">☰ Categories</button>
+        
+        <aside id="leftsidebox">
+            <div class="sidebar-content">
+                <h3>C++ Tutorials</h3>
+                <div class="sidebar-section">
+                    <h4>Categories</h4>
+                    <ul>
+                        <li><a href="./tutASCII.html" class="active" id="loginLink">ASCII Codes</a></li>
+                        <li><a href="./tutbooleancodes.html" id="loginLink">Boolean Codes</a></li>
+                        <li><a href="./tutnumerical.html" id="loginLink">Numerical Bases</a></li>
+                        <li><a href="../video.html" id="loginLink">Other Tutorials</a></li>
+                    </ul>
+                </div>
+            </div>
+        </aside>
+        
+        <section id="contentContainer">
+            <h1>Tutorials</h1>
+            <h2>ASCII Codes</h2>
+            <hr class="divider">
+            
+            <p>It is a very well-known fact that computers can manage internally only 0s (zeros) and 1s (ones). This is true, and by means of sequences of 0s and 1, computers express any numerical value as its binary translation, which is a very simple mathematical operation (as explained in the paper numerical bases).</p>
+            
+            <p>Nevertheless, there is no such evident way to represent letters and other non-numeric characters with 0s and 1s. Therefore, in order to do that, computers use ASCII tables, which are tables or lists that contain all the letters in the roman alphabet plus some additional characters. In these tables, each character is always represented by the same order number. For example, the ASCII code for the capital letter "A" is always represented by the order number 65, which is easily representable using 0s and 1s in binary: 65 expressed as a binary number is 1000001.</p>
+            
+            <p>Because most systems nowadays work with 8-bit bytes, which can represent 256 different values, in addition to the 128 standard ASCII codes, there are other 128 that are known as extended ASCII, which are platform- and locale-dependent. So there is more than one extended ASCII character set.</p>
+            
+            <p>The first of them, the OEM character set, is the one used by the hardware of the immense majority of PC compatible machines, and was also used under the old DOS system. It includes some foreign signs, some marked characters, and pieces to represent panels.</p>
+            
+            <p>The ANSI character set is a standard that many systems incorporate, like Windows, some UNIX platforms, and many standalone applications. It includes more symbols and marked letters so that it can be used with no need of being redefined in many more languages.</p>
+            
+            <div class="table-container">
+                <h3>Standard ASCII Table</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>*0</th>
+                            <th>1</th>
+                            <th>2</th>
+                            <th>3</th>
+                            <th>4</th>
+                            <th>5</th>
+                            <th>6</th>
+                            <th>7</th>
+                            <th>8</th>
+                            <th>9</th>
+                            <th>A</th>
+                            <th>B</th>
+                            <th>C</th>
+                            <th>D</th>
+                            <th>E</th>
+                            <th>F</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>NUL</td>
+                            <td>SOH</td>
+                            <td>STX</td>
+                            <td>ETX</td>
+                            <td>EOT</td>
+                            <td>ENQ</td>
+                            <td>ACK</td>
+                            <td>BEL</td>
+                            <td>BS</td>
+                            <td>TAB</td>
+                            <td>LF</td>
+                            <td>VT</td>
+                            <td>FF</td>
+                            <td>CR</td>
+                            <td>SO</td>
+                            <td>SI</td>
+                        </tr>
+                        <tr>
+                            <td>DLE</td>
+                            <td>DC1</td>
+                            <td>DC2</td>
+                            <td>DC3</td>
+                            <td>DC4</td>
+                            <td>NAK</td>
+                            <td>SYN</td>
+                            <td>ETB</td>
+                            <td>CAN</td>
+                            <td>EM</td>
+                            <td>SUB</td>
+                            <td>ESC</td>
+                            <td>FS</td>
+                            <td>GS</td>
+                            <td>RS</td>
+                            <td>US</td>
+                        </tr>
+                        <tr>
+                            <td> </td>
+                            <td>!</td>
+                            <td>"</td>
+                            <td>#</td>
+                            <td>$</td>
+                            <td>%</td>
+                            <td>&</td>
+                            <td>'</td>
+                            <td>(</td>
+                            <td>)</td>
+                            <td>*</td>
+                            <td>+</td>
+                            <td>,</td>
+                            <td>-</td>
+                            <td>.</td>
+                            <td>/</td>
+                        </tr>
+                        <tr>
+                            <td>0</td>
+                            <td>1</td>
+                            <td>2</td>
+                            <td>3</td>
+                            <td>4</td>
+                            <td>5</td>
+                            <td>6</td>
+                            <td>7</td>
+                            <td>8</td>
+                            <td>9</td>
+                            <td>:</td>
+                            <td>;</td>
+                            <td><</td>
+                            <td>=</td>
+                            <td>></td>
+                            <td>?</td>
+                        </tr>
+                        <tr>
+                            <td>@</td>
+                            <td>A</td>
+                            <td>B</td>
+                            <td>C</td>
+                            <td>D</td>
+                            <td>E</td>
+                            <td>F</td>
+                            <td>G</td>
+                            <td>H</td>
+                            <td>I</td>
+                            <td>J</td>
+                            <td>K</td>
+                            <td>L</td>
+                            <td>M</td>
+                            <td>N</td>
+                            <td>O</td>
+                        </tr>
+                        <tr>
+                            <td>P</td>
+                            <td>Q</td>
+                            <td>R</td>
+                            <td>S</td>
+                            <td>T</td>
+                            <td>U</td>
+                            <td>V</td>
+                            <td>W</td>
+                            <td>X</td>
+                            <td>Y</td>
+                            <td>Z</td>
+                            <td>[</td>
+                            <td>\</td>
+                            <td>]</td>
+                            <td>^</td>
+                            <td>_</td>
+                        </tr>
+                        <tr>
+                            <td>`</td>
+                            <td>a</td>
+                            <td>b</td>
+                            <td>c</td>
+                            <td>d</td>
+                            <td>e</td>
+                            <td>f</td>
+                            <td>g</td>
+                            <td>h</td>
+                            <td>i</td>
+                            <td>j</td>
+                            <td>k</td>
+                            <td>l</td>
+                            <td>m</td>
+                            <td>n</td>
+                            <td>o</td>
+                        </tr>
+                        <tr>
+                            <td>p</td>
+                            <td>q</td>
+                            <td>r</td>
+                            <td>s</td>
+                            <td>t</td>
+                            <td>u</td>
+                            <td>v</td>
+                            <td>w</td>
+                            <td>x</td>
+                            <td>y</td>
+                            <td>z</td>
+                            <td>{</td>
+                            <td>|</td>
+                            <td>}</td>
+                            <td>~</td>
+                            <td>DEL</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="table-container">
+                <h3>Extended ASCII Table (OEM Character Set)</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>0</th>
+                            <th>1</th>
+                            <th>2</th>
+                            <th>3</th>
+                            <th>4</th>
+                            <th>5</th>
+                            <th>6</th>
+                            <th>7</th>
+                            <th>8</th>
+                            <th>9</th>
+                            <th>A</th>
+                            <th>B</th>
+                            <th>C</th>
+                            <th>D</th>
+                            <th>E</th>
+                            <th>F</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>8</td>
+                            <td>♂</td>
+                            <td>u</td>
+                            <td>é</td>
+                            <td>a</td>
+                            <td>à</td>
+                            <td>à</td>
+                            <td>a</td>
+                            <td>c</td>
+                            <td>ê</td>
+                            <td>è</td>
+                            <td>ñ</td>
+                            <td>ò</td>
+                            <td>i</td>
+                            <td>ô</td>
+                            <td>õ</td>
+                            <td>ò</td>
+                        </tr>
+                        <tr>
+                            <td>9</td>
+                            <td>é</td>
+                            <td>re</td>
+                            <td>f</td>
+                            <td>ô</td>
+                            <td>ô</td>
+                            <td>ò</td>
+                            <td>ò</td>
+                            <td>ü</td>
+                            <td>ü</td>
+                            <td>ee</td>
+                            <td>É</td>
+                            <td>¥</td>
+                            <td>R</td>
+                            <td>f</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>A</td>
+                            <td>á</td>
+                            <td>í</td>
+                            <td>ó</td>
+                            <td>ú</td>
+                            <td>r</td>
+                            <td>N</td>
+                            <td>e</td>
+                            <td>e</td>
+                            <td>z</td>
+                            <td>r</td>
+                            <td>-</td>
+                            <td>¥</td>
+                            <td>¥</td>
+                            <td>i</td>
+                            <td>«</td>
+                            <td>»</td>
+                        </tr>
+                        <tr>
+                            <td>B</td>
+                            <td>※</td>
+                            <td>※</td>
+                            <td>※</td>
+                            <td>l</td>
+                            <td>i</td>
+                            <td>il</td>
+                            <td>n</td>
+                            <td>i</td>
+                            <td>il</td>
+                            <td>il</td>
+                            <td>n</td>
+                            <td>il</td>
+                            <td>il</td>
+                            <td>i</td>
+                            <td>n</td>
+                        </tr>
+                        <tr>
+                            <td>C</td>
+                            <td>L</td>
+                            <td>L</td>
+                            <td>T</td>
+                            <td>I</td>
+                            <td>-</td>
+                            <td>+</td>
+                            <td>H</td>
+                            <td>II</td>
+                            <td>II</td>
+                            <td>II</td>
+                            <td>II</td>
+                            <td>II</td>
+                            <td>II</td>
+                            <td>II</td>
+                            <td>±</td>
+                        </tr>
+                        <tr>
+                            <td>D</td>
+                            <td>u</td>
+                            <td>r</td>
+                            <td>m</td>
+                            <td>u</td>
+                            <td>k</td>
+                            <td>r</td>
+                            <td>m</td>
+                            <td>li</td>
+                            <td>+</td>
+                            <td>j</td>
+                            <td>r</td>
+                            <td>■</td>
+                            <td>■</td>
+                            <td>■</td>
+                            <td>■</td>
+                        </tr>
+                        <tr>
+                            <td>E</td>
+                            <td>α</td>
+                            <td>θ</td>
+                            <td>r</td>
+                            <td>π</td>
+                            <td>z</td>
+                            <td>σ</td>
+                            <td>μ</td>
+                            <td>τ</td>
+                            <td>δ</td>
+                            <td>θ</td>
+                            <td>Ω</td>
+                            <td>δ</td>
+                            <td>ω</td>
+                            <td>φ</td>
+                            <td>c</td>
+                            <td>n</td>
+                        </tr>
+                        <tr>
+                            <td>F</td>
+                            <td>=</td>
+                            <td>±</td>
+                            <td>2</td>
+                            <td>≤</td>
+                            <td>ρ</td>
+                            <td>j</td>
+                            <td>÷</td>
+                            <td>≈</td>
+                            <td>o</td>
+                            <td>·</td>
+                            <td>√</td>
+                            <td>n</td>
+                            <td>2</td>
+                            <td>■</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer id="footer">
+        <div class="footer-links">
+            <a href="../video.html" id="loginLink">Home page</a> | 
+            <a href="../privcypolicy/index.html" id="loginLink">Privacy policy</a>
+        </div>
+        <div class="copyright">
+            © cplusplus.com, 2000-2023 - All rights reserved - v3.3.4s
+        </div>
+        <div class="feedback">
+            <a href="#">Spotted an error? contact us</a>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Toggle navigation menu
+            const menuToggle = document.getElementById('menuToggle');
+            const mainNav = document.getElementById('mainNav');
+            
+            if (menuToggle && mainNav) {
+                menuToggle.addEventListener('click', function() {
+                    mainNav.classList.toggle('active');
+                    this.setAttribute('aria-expanded', mainNav.classList.contains('active'));
+                });
+            }
+            
+            // Toggle sidebar
+            const leftMenuToggle = document.getElementById('leftMenuToggle');
+            const leftSidebox = document.getElementById('leftsidebox');
+            
+            if (leftMenuToggle && leftSidebox) {
+                leftMenuToggle.addEventListener('click', function() {
+                    leftSidebox.classList.toggle('active');
+                    this.setAttribute('aria-expanded', leftSidebox.classList.contains('active'));
+                });
+            }
+            
+            // Login state management
+            const loginLinks = document.querySelectorAll('#loginLink');
+            
+            loginLinks.forEach(link => {
+                link.addEventListener('click', function() {
+                    localStorage.setItem('loginRedirect', window.location.href);
+                });
+                
+                // Check if user is logged in
+                if (localStorage.getItem('userLoggedIn')) {
+                    if (link.textContent === 'Login') {
+                        link.textContent = 'Logout';
+                    }
+                    link.addEventListener('click', function(e) {
+                        if (link.textContent === 'Logout') {
+                            e.preventDefault();
+                            localStorage.removeItem('userLoggedIn');
+                            window.location.reload();
+                        }
+                    });
+                }
+            });
+            
+            // Close menus when clicking outside
+            document.addEventListener('click', function(e) {
+                if (mainNav && !e.target.closest('#menuToggle') && !e.target.closest('#mainNav')) {
+                    mainNav.classList.remove('active');
+                }
+                
+                if (leftSidebox && !e.target.closest('#leftMenuToggle') && !e.target.closest('#leftsidebox')) {
+                    leftSidebox.classList.remove('active');
+                }
+            });
+            
+            // Responsive adjustments
+            function checkScreenSize() {
+                if (window.innerWidth <= 1024) {
+                    if (menuToggle) menuToggle.style.display = 'block';
+                    if (leftMenuToggle) leftMenuToggle.style.display = 'block';
+                } else {
+                    if (menuToggle) menuToggle.style.display = 'none';
+                    if (leftMenuToggle) leftMenuToggle.style.display = 'none';
+                    if (mainNav) mainNav.classList.remove('active');
+                    if (leftSidebox) leftSidebox.classList.remove('active');
+                }
+            }
+            
+            window.addEventListener('resize', checkScreenSize);
+            checkScreenSize();
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,465 @@
+:root {
+    --primary-color: #2c3e50;
+    --secondary-color: #3498db;
+    --accent-color: #2980b9;
+    --light-color: #ecf0f1;
+    --dark-color: #333;
+    --white: #fff;
+    --gray: #95a5a6;
+    --border-radius: 4px;
+    --box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    --transition: all 0.3s ease;
+}
+
+/* Base Styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: var(--dark-color);
+    background-color: #f5f5f5;
+    overflow-x: hidden;
+}
+
+/* Header Styles */
+#header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: var(--primary-color);
+    color: var(--white);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.logo-container {
+    height: 60px;
+    display: flex;
+    align-items: center;
+}
+
+#logo {
+    height: 100%;
+    object-fit: contain;
+}
+
+/* Navigation */
+#menuToggle {
+    display: none;
+    background-color: var(--secondary-color);
+    color: var(--white);
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: var(--border-radius);
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+#menuToggle:hover {
+    background-color: var(--accent-color);
+}
+
+#mainNav ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    gap: 1rem;
+}
+
+#mainNav a {
+    color: var(--white);
+    padding: 0.5rem 1rem;
+    border-radius: var(--border-radius);
+    transition: var(--transition);
+    text-decoration: none;
+}
+
+#mainNav a:hover,
+#mainNav a.active {
+    background-color: var(--secondary-color);
+}
+
+/* Search and Login */
+.search-login-container {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.search-box {
+    display: flex;
+    align-items: center;
+}
+
+.search-box input {
+    padding: 0.5rem;
+    border: 1px solid var(--gray);
+    border-radius: var(--border-radius) 0 0 var(--border-radius);
+    border-right: none;
+}
+
+.search-box button {
+    padding: 0.5rem 1rem;
+    background-color: var(--secondary-color);
+    color: var(--white);
+    border: none;
+    border-radius: 0 var(--border-radius) var(--border-radius) 0;
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.search-box button:hover {
+    background-color: var(--accent-color);
+}
+
+.login-btn {
+    padding: 0.5rem 1rem;
+    background-color: var(--secondary-color);
+    color: var(--white);
+    border-radius: var(--border-radius);
+    transition: var(--transition);
+    text-decoration: none;
+}
+
+.login-btn:hover {
+    background-color: var(--accent-color);
+}
+
+/* Main Content Layout */
+main {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 1rem;
+    gap: 1.5rem;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+/* Sidebar */
+#leftMenuToggle {
+    display: none;
+    background-color: var(--secondary-color);
+    color: var(--white);
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: var(--border-radius);
+    cursor: pointer;
+    margin: 0.5rem;
+    transition: var(--transition);
+}
+
+#leftMenuToggle:hover {
+    background-color: var(--accent-color);
+}
+
+#leftsidebox {
+    flex: 0 0 250px;
+    background-color: var(--white);
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+    padding: 1.5rem;
+    height: fit-content;
+}
+
+.sidebar-content h3 {
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+}
+
+.sidebar-section {
+    margin-bottom: 1.5rem;
+}
+
+.sidebar-section h4 {
+    color: var(--primary-color);
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
+}
+
+.sidebar-section ul {
+    list-style: none;
+}
+
+.sidebar-section li {
+    margin-bottom: 0.5rem;
+}
+
+.sidebar-section a {
+    display: block;
+    padding: 0.5rem;
+    color: var(--dark-color);
+    border-radius: var(--border-radius);
+    transition: var(--transition);
+    text-decoration: none;
+}
+
+.sidebar-section a:hover {
+    background-color: var(--light-color);
+    color: var(--secondary-color);
+}
+
+.sidebar-section a.active {
+    background-color: var(--secondary-color);
+    color: var(--white);
+}
+
+/* Content Container */
+#contentContainer {
+    flex: 1;
+    min-width: 300px;
+    background-color: var(--white);
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+    padding: 1.5rem;
+}
+
+#contentContainer h1 {
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+}
+
+.divider {
+    border: none;
+    height: 2px;
+    background-color: var(--primary-color);
+    margin: 1rem 0;
+}
+
+#contentContainer h2 {
+    color: var(--primary-color);
+    margin: 1.5rem 0 1rem;
+}
+
+#contentContainer h3 {
+    color: var(--primary-color);
+    margin: 1.5rem 0 1rem;
+}
+
+#contentContainer p {
+    margin-bottom: 1.5rem;
+    line-height: 1.6;
+    font-size: 1rem;
+}
+
+/* Table Styles */
+.table-container {
+    overflow-x: auto;
+    margin: 1.5rem 0;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 1.5rem;
+}
+
+th, td {
+    padding: 8px 12px;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+th {
+    background-color: var(--primary-color);
+    color: var(--white);
+    font-weight: bold;
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+tr:hover {
+    background-color: var(--light-color);
+}
+
+/* Code blocks */
+.code-block {
+    background-color: #f5f5f5;
+    border-radius: var(--border-radius);
+    padding: 1rem;
+    font-family: 'Courier New', Courier, monospace;
+    margin: 1rem 0;
+    overflow-x: auto;
+}
+
+/* Footer */
+#footer {
+    background-color: var(--primary-color);
+    color: var(--white);
+    padding: 2rem 1rem;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.footer-links {
+    margin-bottom: 1rem;
+}
+
+.footer-links a {
+    color: var(--white);
+    margin: 0 0.5rem;
+    transition: var(--transition);
+    text-decoration: none;
+}
+
+.footer-links a:hover {
+    color: var(--secondary-color);
+}
+
+.copyright {
+    margin-bottom: 0.5rem;
+    font-size: 0.9rem;
+}
+
+.feedback a {
+    color: var(--secondary-color);
+    text-decoration: underline;
+}
+
+/* Navigation Button */
+.nav-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    width: 120px;
+    background-color: var(--secondary-color);
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.nav-btn:hover {
+    background-color: var(--accent-color);
+}
+
+.nav-btn h3 {
+    margin: 0;
+    font-size: 16px;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    #header {
+        position: relative;
+    }
+
+    #menuToggle {
+        display: block;
+        order: 1;
+    }
+
+    .logo-container {
+        order: 2;
+        margin-right: auto;
+    }
+
+    #mainNav {
+        order: 4;
+        width: 100%;
+        display: none;
+    }
+
+    #mainNav.active {
+        display: block;
+    }
+
+    #mainNav ul {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    .search-login-container {
+        order: 3;
+        width: 100%;
+        justify-content: flex-end;
+    }
+
+    #leftMenuToggle {
+        display: block;
+    }
+
+    #leftsidebox {
+        display: none;
+        width: 100%;
+    }
+
+    #leftsidebox.active {
+        display: block;
+    }
+}
+
+@media (max-width: 768px) {
+    .search-box {
+        width: 100%;
+    }
+
+    .search-box input {
+        flex: 1;
+    }
+
+    #contentContainer {
+        padding: 1rem;
+    }
+
+    table {
+        font-size: 0.9rem;
+    }
+
+    th, td {
+        padding: 6px 8px;
+    }
+
+    #footer {
+        padding: 1.5rem 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    #header {
+        padding: 0.75rem;
+    }
+
+    .logo-container {
+        height: 50px;
+    }
+
+    .search-login-container {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    .search-box {
+        width: 100%;
+    }
+
+    .login-btn, .nav-btn {
+        width: 100%;
+        text-align: center;
+    }
+
+    main {
+        padding: 0.75rem;
+    }
+
+    table {
+        font-size: 0.85rem;
+    }
+
+    th, td {
+        padding: 4px 6px;
+    }
+}

@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boolean Codes - C++ Tutorials</title>
+    <link rel="stylesheet" href="tutboolean.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header id="header">
+        <div class="logo-container">
+            <img src="../assests/Screenshot 2025-03-17 180941.png" alt="C++ Logo" id="logo">
+        </div>
+        
+        <button id="menuToggle" aria-label="Toggle navigation menu">☰ Menu</button>
+        
+        <nav id="mainNav">
+            <ul>
+                <li><a href="../article/Article.html" id="loginLink">Article</a></li>
+                <li><a href="../tutorials/tutASCII.html"class="active" id="loginLink">Tutorials</a></li>
+                <li><a href="../Refrence/Refrence.html" id="loginLink">Reference</a></li>
+                <li><a href="../Forum/forum.html" id="loginLink">Forum</a></li>
+            </ul>
+        </nav>
+        
+        <div class="search-login-container">
+            <div class="search-box">
+                <input type="text" placeholder="Search tutorials..." aria-label="Search tutorials">
+                <button type="submit">Search</button>
+            </div>
+            <a href="../login/LOGIN.HTML" class="login-btn" id="loginLink">Login</a>
+            <a href="../video.html" class="nav-btn">
+                <h3>Home</h3>
+            </a>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <button id="leftMenuToggle" aria-label="Toggle sidebar">☰ Categories</button>
+        
+        <aside id="leftsidebox">
+            <div class="sidebar-content">
+                <h3>C++ Tutorials</h3>
+                <div class="sidebar-section">
+                    <h4>Categories</h4>
+                    <ul>
+                        <li><a href="./tutASCII.html" id="loginLink">ASCII Codes</a></li>
+                        <li><a href="./tutbooleancodes.html" class="active" id="loginLink">Boolean Codes</a></li>
+                        <li><a href="./tutnumerical.html" id="loginLink">Numerical Bases</a></li>
+                        <li><a href="../video.html" id="loginLink">Other Tutorials</a></li>
+                    </ul>
+                </div>
+            </div>
+        </aside>
+        
+        <section id="contentContainer">
+            <h1>Tutorials</h1>
+            <h2>Boolean Codes</h2>
+            <hr class="divider">
+            
+            <p>Boolean codes are fundamental in computer science and digital electronics, representing the most basic form of data with only two possible values: true (1) and false (0). These binary values form the foundation of all digital systems and programming logic.</p>
+            
+            <h3>Boolean Logic</h3>
+            <p>Boolean logic consists of operations such as AND, OR, NOT, XOR, and others that manipulate these binary values. These operations are implemented in programming languages through logical operators and are used to make decisions and control program flow.</p>
+            
+            <div class="table-container">
+                <h3>Basic Boolean Operations</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Operation</th>
+                            <th>Symbol</th>
+                            <th>Input A</th>
+                            <th>Input B</th>
+                            <th>Output</th>
+                            <th>Description</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>AND</td>
+                            <td>&&</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>True only if both inputs are true</td>
+                        </tr>
+                        <tr>
+                            <td>AND</td>
+                            <td>&&</td>
+                            <td>1</td>
+                            <td>1</td>
+                            <td>1</td>
+                            <td>True only if both inputs are true</td>
+                        </tr>
+                        <tr>
+                            <td>OR</td>
+                            <td>||</td>
+                            <td>0</td>
+                            <td>1</td>
+                            <td>1</td>
+                            <td>True if either input is true</td>
+                        </tr>
+                        <tr>
+                            <td>NOT</td>
+                            <td>!</td>
+                            <td>1</td>
+                            <td>-</td>
+                            <td>0</td>
+                            <td>Inverts the input value</td>
+                        </tr>
+                        <tr>
+                            <td>XOR</td>
+                            <td>^</td>
+                            <td>1</td>
+                            <td>0</td>
+                            <td>1</td>
+                            <td>True if inputs are different</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <h3>Boolean Operators in C++</h3>
+            <p>C++ provides several ways to work with boolean values and operations:</p>
+            
+            <div class="code-block">
+                // Boolean variable declaration<br>
+                bool isTrue = true;<br>
+                bool isFalse = false;<br><br>
+                
+                // Logical operators<br>
+                bool resultAnd = (true && false);  // AND operation<br>
+                bool resultOr = (true || false);   // OR operation<br>
+                bool resultNot = !true;            // NOT operation<br><br>
+                
+                // Conditional statements<br>
+                if (condition1 && condition2) {<br>
+                &nbsp;&nbsp;// Executes if both conditions are true<br>
+                }
+            </div>
+
+            <h3>Truth Tables</h3>
+            <p>Truth tables systematically list all possible input combinations and their corresponding outputs for boolean operations:</p>
+            
+            <div class="table-container">
+                <h4>AND Truth Table</h4>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>A</th>
+                            <th>B</th>
+                            <th>A AND B</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>0</td><td>0</td><td>0</td></tr>
+                        <tr><td>0</td><td>1</td><td>0</td></tr>
+                        <tr><td>1</td><td>0</td><td>0</td></tr>
+                        <tr><td>1</td><td>1</td><td>1</td></tr>
+                    </tbody>
+                </table>
+            </div>
+            
+            <div class="table-container">
+                <h4>OR Truth Table</h4>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>A</th>
+                            <th>B</th>
+                            <th>A OR B</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>0</td><td>0</td><td>0</td></tr>
+                        <tr><td>0</td><td>1</td><td>1</td></tr>
+                        <tr><td>1</td><td>0</td><td>1</td></tr>
+                        <tr><td>1</td><td>1</td><td>1</td></tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer id="footer">
+        <div class="footer-links">
+            <a href="../video.html" id="loginLink">Home page</a> | 
+            <a href="../privcypolicy/index.html" id="loginLink">Privacy policy</a>
+        </div>
+        <div class="copyright">
+            © cplusplus.com, 2000-2023 - All rights reserved - v3.3.4s
+        </div>
+        <div class="feedback">
+            <a href="#">Spotted an error? contact us</a>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Toggle navigation menu
+            const menuToggle = document.getElementById('menuToggle');
+            const mainNav = document.getElementById('mainNav');
+            
+            if (menuToggle && mainNav) {
+                menuToggle.addEventListener('click', function() {
+                    mainNav.classList.toggle('active');
+                    this.setAttribute('aria-expanded', mainNav.classList.contains('active'));
+                });
+            }
+            
+            // Toggle sidebar
+            const leftMenuToggle = document.getElementById('leftMenuToggle');
+            const leftSidebox = document.getElementById('leftsidebox');
+            
+            if (leftMenuToggle && leftSidebox) {
+                leftMenuToggle.addEventListener('click', function() {
+                    leftSidebox.classList.toggle('active');
+                    this.setAttribute('aria-expanded', leftSidebox.classList.contains('active'));
+                });
+            }
+            
+            // Login state management
+            const loginLinks = document.querySelectorAll('#loginLink');
+            
+            loginLinks.forEach(link => {
+                link.addEventListener('click', function() {
+                    localStorage.setItem('loginRedirect', window.location.href);
+                });
+                
+                // Check if user is logged in
+                if (localStorage.getItem('userLoggedIn')) {
+                    if (link.textContent === 'Login') {
+                        link.textContent = 'Logout';
+                    }
+                    link.addEventListener('click', function(e) {
+                        if (link.textContent === 'Logout') {
+                            e.preventDefault();
+                            localStorage.removeItem('userLoggedIn');
+                            window.location.reload();
+                        }
+                    });
+                }
+            });
+            
+            // Close menus when clicking outside
+            document.addEventListener('click', function(e) {
+                if (mainNav && !e.target.closest('#menuToggle') && !e.target.closest('#mainNav')) {
+                    mainNav.classList.remove('active');
+                }
+                
+                if (leftSidebox && !e.target.closest('#leftMenuToggle') && !e.target.closest('#leftsidebox')) {
+                    leftSidebox.classList.remove('active');
+                }
+            });
+            
+            // Responsive adjustments
+            function checkScreenSize() {
+                if (window.innerWidth <= 1024) {
+                    if (menuToggle) menuToggle.style.display = 'block';
+                    if (leftMenuToggle) leftMenuToggle.style.display = 'block';
+                } else {
+                    if (menuToggle) menuToggle.style.display = 'none';
+                    if (leftMenuToggle) leftMenuToggle.style.display = 'none';
+                    if (mainNav) mainNav.classList.remove('active');
+                    if (leftSidebox) leftSidebox.classList.remove('active');
+                }
+            }
+            
+            window.addEventListener('resize', checkScreenSize);
+            checkScreenSize();
+        });
+    </script>
+</body>
+</html>

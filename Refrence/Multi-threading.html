@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Miscellaneous Headers - C++ Reference</title>
+    <link rel="stylesheet" href="Multi-threading.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header id="header">
+        <div class="logo-container">
+            <img src="../assests/Screenshot 2025-03-17 180941.png" alt="C++ Logo" id="logo">
+        </div>
+        
+        <button id="menuToggle" aria-label="Toggle navigation menu">☰ Menu</button>
+        
+        <nav id="mainNav">
+            <ul>
+                <li><a href="../article/Article.html" id="loginLink">Article</a></li>
+                <li><a href="../tutorials/tutASCII.html" id="loginLink">Tutorials</a></li>
+                <li><a href="../Refrence/Refrence.html" id="loginLink" class="active">Reference</a></li>
+                <li><a href="../Forum/forum.html" id="loginLink">Forum</a></li>
+            </ul>
+        </nav>
+        
+        <div class="search-login-container">
+            <div class="search-box">
+                <input type="text" placeholder="Search reference..." aria-label="Search reference">
+                <button type="submit">Search</button>
+            </div>
+            <a href="../login/LOGIN.HTML" class="login-btn" id="loginLink">Login</a>
+            <a href="../video.html" class="nav-btn">
+                <h3>Home</h3>
+            </a>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <button id="leftMenuToggle" aria-label="Toggle sidebar">☰ Categories</button>
+        
+        <aside id="leftsidebox">
+            <div class="sidebar-content">
+                <h3>C++</h3>
+                <div class="sidebar-section">
+                    <h4>Reference Categories</h4>
+                    <ul>
+                        <li><a href="./clibrary.html" id="loginLink">C Library</a></li>
+                        <li><a href="./container.html" id="loginLink">Containers</a></li>
+                        <li><a href="./inputoutput.html" id="loginLink">Input/Output</a></li>
+                        <li><a href="./Multi-threading.html" class="active" id="loginLink">Multi-Threading</a></li>
+                        <li><a href="../video.html"  id="loginLink">Other</a></li>
+                    </ul>
+                </div>
+            </div>
+        </aside>
+        
+        <section id="contentContainer">
+            <h1>Reference</h1>
+            <h2>Miscellaneous Headers</h2>
+            <hr class="divider">
+            <h3>Utility Headers</h3>
+            <hr class="divider">
+            
+            <p>The C++ Standard Library includes several utility headers that provide specialized functionality for various programming needs. These headers contain components that don't fit neatly into other categories but are essential for modern C++ programming.</p>
+            
+            <div class="table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Header</th>
+                            <th>Description</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>&lt;utility&gt;</td>
+                            <td>Provides utilities like <code>std::pair</code> and <code>std::move</code> for working with pairs and moving objects.</td>
+                        </tr>
+                        <tr>
+                            <td>&lt;algorithm&gt;</td>
+                            <td>Provides a collection of functions for performing operations on ranges of elements, such as sorting, searching, and modifying sequences.</td>
+                        </tr>
+                        <tr>
+                            <td>&lt;chrono&gt;</td>
+                            <td>Provides facilities for working with time points, durations, and clocks.</td>
+                        </tr>
+                        <tr>
+                            <td>&lt;functional&gt;</td>
+                            <td>Provides function objects, binders, and other utilities for working with functions and callable objects.</td>
+                        </tr>
+                        <tr>
+                            <td>&lt;tuple&gt;</td>
+                            <td>Provides the <code>std::tuple</code> class for working with fixed-size collections of heterogeneous values.</td>
+                        </tr>
+                        <tr>
+                            <td>&lt;optional&gt;</td>
+                            <td>Provides the <code>std::optional</code> class for representing optional values that may or may not be present.</td>
+                        </tr>
+                        <tr>
+                            <td>&lt;variant&gt;</td>
+                            <td>Provides the <code>std::variant</code> class for representing type-safe unions.</td>
+                        </tr>
+                        <tr>
+                            <td>&lt;any&gt;</td>
+                            <td>Provides the <code>std::any</code> class for type-safe storage of single values of any type.</td>
+                        </tr>
+                        <tr>
+                            <td>&lt;bitset&gt;</td>
+                            <td>Provides the <code>std::bitset</code> class for working with fixed-size sequences of bits.</td>
+                        </tr>
+                        <tr>
+                            <td>&lt;ratio&gt;</td>
+                            <td>Provides compile-time rational arithmetic support.</td>
+                        </tr>
+                        <tr>
+                            <td>&lt;type_traits&gt;</td>
+                            <td>Provides utilities for type introspection and type transformations at compile time.</td>
+                        </tr>
+                        <tr>
+                            <td>&lt;random&gt;</td>
+                            <td>Provides facilities for generating random numbers using various distributions and engines.</td>
+                        </tr>
+                        <tr>
+                            <td>&lt;initializer_list&gt;</td>
+                            <td>Provides the <code>std::initializer_list</code> class for working with brace-enclosed initializer lists.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer id="footer">
+        <div class="footer-links">
+            <a href="../video.html" id="loginLink">home page</a> | 
+            <a href="../privcypolicy/index.html" id="loginLink">Privacy policy</a>
+        </div>
+        <div class="copyright">
+            © cplusplus.com, 2000-2023 - All rights reserved - v3.3.4s
+        </div>
+        <div class="feedback">
+            <a href="#">Spotted an error? contact us</a>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Toggle navigation menu
+            const menuToggle = document.getElementById('menuToggle');
+            const mainNav = document.getElementById('mainNav');
+            
+            if (menuToggle && mainNav) {
+                menuToggle.addEventListener('click', function() {
+                    mainNav.classList.toggle('active');
+                    this.setAttribute('aria-expanded', mainNav.classList.contains('active'));
+                });
+            }
+            
+            // Toggle sidebar
+            const leftMenuToggle = document.getElementById('leftMenuToggle');
+            const leftSidebox = document.getElementById('leftsidebox');
+            
+            if (leftMenuToggle && leftSidebox) {
+                leftMenuToggle.addEventListener('click', function() {
+                    leftSidebox.classList.toggle('active');
+                    this.setAttribute('aria-expanded', leftSidebox.classList.contains('active'));
+                });
+            }
+            
+            // Login state management
+            const loginLinks = document.querySelectorAll('#loginLink');
+            
+            loginLinks.forEach(link => {
+                link.addEventListener('click', function() {
+                    localStorage.setItem('loginRedirect', window.location.href);
+                });
+                
+                // Check if user is logged in
+                if (localStorage.getItem('userLoggedIn')) {
+                    link.textContent = link.textContent === 'Login' ? 'Logout' : link.textContent;
+                    link.addEventListener('click', function(e) {
+                        if (link.textContent === 'Logout') {
+                            e.preventDefault();
+                            localStorage.removeItem('userLoggedIn');
+                            window.location.reload();
+                        }
+                    });
+                }
+            });
+            
+            // Close menus when clicking outside
+            document.addEventListener('click', function(e) {
+                if (mainNav && !e.target.closest('#menuToggle') && !e.target.closest('#mainNav')) {
+                    mainNav.classList.remove('active');
+                }
+                
+                if (leftSidebox && !e.target.closest('#leftMenuToggle') && !e.target.closest('#leftsidebox')) {
+                    leftSidebox.classList.remove('active');
+                }
+            });
+            
+            // Responsive adjustments
+            function checkScreenSize() {
+                if (window.innerWidth <= 1024) {
+                    if (menuToggle) menuToggle.style.display = 'block';
+                    if (leftMenuToggle) leftMenuToggle.style.display = 'block';
+                } else {
+                    if (menuToggle) menuToggle.style.display = 'none';
+                    if (leftMenuToggle) leftMenuToggle.style.display = 'none';
+                    if (mainNav) mainNav.classList.remove('active');
+                    if (leftSidebox) leftSidebox.classList.remove('active');
+                }
+            }
+            
+            window.addEventListener('resize', checkScreenSize);
+            checkScreenSize();
+        });
+    </script>
+</body>
+</html>
