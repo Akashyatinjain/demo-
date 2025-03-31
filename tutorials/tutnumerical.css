@@ -17,6 +17,10 @@
     margin: 0;
     padding: 0;
 }
+#loginLink{
+    text-decoration: none;
+    color: white;
+}
 
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
